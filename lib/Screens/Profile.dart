@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:switch_app/Screens/Noti.dart';
 
+import '../Widgets/AlertDialog.dart';
 import 'Home.dart';
 import 'InformationEdit.dart';
 import 'LanguageChange.dart';
@@ -141,7 +142,12 @@ class _ProfileState extends State<Profile> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children:  [
                     Expanded(child: Container()),
-                    const Text('خروج',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
+                    InkWell(child: const Text('خروج',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
+                    onTap: () async {
+                                          final action= await AlertDialogs.yesCancelDialog(context,'Logout','خروج من التطبيق؟');
+
+                  },
+                    ),
                   SizedBox(width: 25,),
                   SvgPicture.asset('assets/images/Group 2034.svg'),
                   ],

@@ -6,6 +6,7 @@ import 'Cars.dart';
 import 'Home.dart';
 import 'Noti.dart';
 import 'Profile.dart';
+import 'Vehicles.dart';
 
 class Reports extends StatefulWidget {
   const Reports({super.key});
@@ -43,11 +44,16 @@ class _ReportsState extends State<Reports> {
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>const Profile()));
                 },
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children:[ SvgPicture.asset('assets/images/Group 2064.svg',height: 20,),
-              const Text('المركبات',style: TextStyle(fontFamily: 'sst bold',fontSize: 9,color: Colors.white),)
-              ]),
+              InkWell(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children:[ SvgPicture.asset('assets/images/Group 2064.svg',height: 20,),
+                const Text('المركبات',style: TextStyle(fontFamily: 'sst bold',fontSize: 9,color: Colors.white),)
+                ]),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const Vehicles()));
+                },
+              ),
               const SizedBox(width: 5,),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,

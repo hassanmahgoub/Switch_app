@@ -41,7 +41,7 @@ class _ProfileState extends State<Profile> {
                     
                     
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>noti()));
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>noti()));
                     },
                     ),
                   ],),

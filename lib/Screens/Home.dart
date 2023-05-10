@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
                 const Text('حسابي',style: TextStyle(fontFamily: 'sst bold',fontSize: 9,color: Colors.white),)
                 ]),
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const Profile()));
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Profile()));
                 },
               ),
               Column(

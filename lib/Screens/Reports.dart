@@ -17,6 +17,7 @@ class Reports extends StatefulWidget {
 class _ReportsState extends State<Reports> {
   @override
   Widget build(BuildContext context) {
+    // ignore: non_constant_identifier_names
     final ScreenSize = MediaQuery.of(context).size;
     return Scaffold(
       bottomNavigationBar: SafeArea(child: Padding(
@@ -69,7 +70,7 @@ class _ReportsState extends State<Reports> {
       )),
       floatingActionButtonLocation: FloatingActionButtonLocation.miniCenterDocked,
       floatingActionButton: FloatingActionButton(onPressed: (){
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Home()));
       },
       backgroundColor: const Color(0xffBE1E2D),
       
@@ -122,23 +123,23 @@ class _ReportsState extends State<Reports> {
             padding: const EdgeInsets.symmetric(horizontal: 35),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-              const Text('التقارير',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst bold',fontSize: 12,fontWeight: FontWeight.bold),),
+              children: const [
+              Text('التقارير',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst bold',fontSize: 12,fontWeight: FontWeight.bold),),
             ],),
           ),
             const SizedBox(height: 10,),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25),
               child: Slidable(
-                endActionPane: ActionPane(motion: StretchMotion(), children: [
+                endActionPane: ActionPane(motion: const StretchMotion(), children: [
                   SlidableAction(
                     autoClose: true,
-                    borderRadius: BorderRadius.only(topRight: Radius.circular(7),bottomRight: Radius.circular(7)),
+                    borderRadius: const BorderRadius.only(topRight: Radius.circular(7),bottomRight: Radius.circular(7)),
                     onPressed: ((context){
                   
                   }),
                   icon: Icons.delete_outline,
-                  backgroundColor: Color(0xffD0E2E5),
+                  backgroundColor: const Color(0xffD0E2E5),
                   )
                 ]),
                 direction: Axis.horizontal,

@@ -82,7 +82,7 @@ class _OrdersState extends State<Orders> {
                             ],
                           ),
                           onTap: () {
-                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Orders()));
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Orders()));
                           },
                         ),
                         const Text('KMHD641UGHU321730',style: TextStyle(color: Color(0xff0474E1),fontFamily: 'sst bold',fontSize: 12,fontWeight: FontWeight.bold),),
@@ -217,7 +217,7 @@ class _OrdersState extends State<Orders> {
                      },
                    ),
                  ),
-                 SizedBox(height: 40,)
+                 const SizedBox(height: 40,)
                 ],
               ),
             ),

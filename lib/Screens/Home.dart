@@ -96,7 +96,7 @@ class _HomeState extends State<Home> {
                   children:  [
                   InkWell(child: SvgPicture.asset('assets/images/Group 472 (3).svg'),
                   onTap: () {
-                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>noti()));
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const noti()));
                   },
                   ),
                   SvgPicture.asset('assets/images/Group 121 (1).svg'),
@@ -272,7 +272,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
                 
-                SizedBox(height: 40,),
+                const SizedBox(height: 40,),
               ]),
                      ),
                    ),

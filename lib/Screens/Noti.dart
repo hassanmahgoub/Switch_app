@@ -70,7 +70,7 @@ class _notiState extends State<noti> {
       )),
       floatingActionButtonLocation: FloatingActionButtonLocation.miniCenterDocked,
       floatingActionButton: FloatingActionButton(onPressed: (){
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Home()));
       },
       backgroundColor: const Color(0xffBE1E2D),
       

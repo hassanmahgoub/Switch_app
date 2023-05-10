@@ -85,7 +85,7 @@ class Cars extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children:[InkWell(child: SvgPicture.asset('assets/images/Group 472 (5).svg',),
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>noti()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const noti()));
             },
             ),
           SvgPicture.asset('assets/images/Group 121 (1).svg'),
@@ -314,7 +314,7 @@ class Cars extends StatelessWidget {
                 ),
                 ),
               ),
-              SizedBox(height: 40,)
+              const SizedBox(height: 40,)
             ],),
           ),
         )

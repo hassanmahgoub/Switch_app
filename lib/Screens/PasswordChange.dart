@@ -1,0 +1,17 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
+
+class PasswordChange extends StatefulWidget {
+  const PasswordChange({super.key});
+
+  @override
+  State<PasswordChange> createState() => _PasswordChangeState();
+}
+
+class _PasswordChangeState extends State<PasswordChange> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
+}

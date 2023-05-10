@@ -6,6 +6,9 @@ import 'package:flutter_svg/svg.dart';
 import 'package:switch_app/Screens/Noti.dart';
 
 import 'Home.dart';
+import 'InformationEdit.dart';
+import 'LanguageChange.dart';
+import 'PasswordChange.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -85,7 +88,11 @@ class _ProfileState extends State<Profile> {
                   children:  [
                     Icon(Icons.arrow_back_ios,color: Color(0xff1D0D63),size: 15,),
                     Expanded(child: Container()),
-                    Text('تعديل معلوماتي',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
+                    InkWell(child: Text('تعديل معلوماتي',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>InformationEdit()));
+                    },
+                    ),
                     SizedBox(width: 25,),
                     SvgPicture.asset('assets/images/Group 81.svg'),
                   ],
@@ -99,7 +106,11 @@ class _ProfileState extends State<Profile> {
                   children:  [
                     const Icon(Icons.arrow_back_ios,color: Color(0xff1D0D63),size: 15,),
                     Expanded(child: Container()),
-                    Text('تغيير كلمة المرور',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
+                    InkWell(child: Text('تغيير كلمة المرور',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>PasswordChange()));
+                    },
+                    ),
                     SizedBox(width: 25,),
                     SvgPicture.asset('assets/images/Group 83.svg')
                   ],
@@ -113,7 +124,11 @@ class _ProfileState extends State<Profile> {
                   children:  [
                     Icon(Icons.arrow_back_ios,color: Color(0xff1D0D63),size: 15,),
                     Expanded(child: Container()),
-                    Text('تغيير اللغة',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
+                    InkWell(child: Text('تغيير اللغة',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>LanguageChange()));
+                    },
+                    ),
                     SizedBox(width: 25,),
                     SvgPicture.asset('assets/images/Group 2041.svg'),
                   ],

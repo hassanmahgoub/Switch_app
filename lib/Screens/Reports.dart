@@ -90,7 +90,7 @@ class _ReportsState extends State<Reports> {
               color: Color(0xff1D0D63),
               borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20))),
             child: Padding(
-              padding: const EdgeInsets.only(top: 30,left: 30,right: 30),
+              padding: const EdgeInsets.only(top: 30,left: 20,right: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -106,7 +106,7 @@ class _ReportsState extends State<Reports> {
             ),
             const SizedBox(height: 20,),
             Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Container(height: 45,width: ScreenSize.width,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -126,7 +126,7 @@ class _ReportsState extends State<Reports> {
           ),
           const SizedBox(height: 10,),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 35),
+            padding: const EdgeInsets.symmetric(horizontal: 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: const [
@@ -135,7 +135,7 @@ class _ReportsState extends State<Reports> {
           ),
             const SizedBox(height: 10,),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
               child: Slidable(
                 endActionPane: ActionPane(motion: const StretchMotion(), children: [
                   SlidableAction(
@@ -210,7 +210,7 @@ class _ReportsState extends State<Reports> {
             ),
             const SizedBox(height: 10,),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
               child: Slidable(
                 endActionPane: ActionPane(motion: const StretchMotion(), children: [
                   SlidableAction(
@@ -286,7 +286,7 @@ class _ReportsState extends State<Reports> {
             ),
             const SizedBox(height: 10,),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
               child: Slidable(
                 endActionPane: ActionPane(motion: const StretchMotion(), children: [
                   SlidableAction(

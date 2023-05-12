@@ -26,12 +26,12 @@ class AlertDialogs {
             Expanded(
               child: Container(
                 height: 40,
-                decoration: BoxDecoration(color: Color(0xff0010037),
+                decoration: BoxDecoration(color: Color(0xff1D0D63),
                 borderRadius: BorderRadius.circular(5)
                 ),
                 child: TextButton(onPressed: (){
                   Navigator.of(context).pop(DialogAction.cancel);
-                }, child: Text('إلغاء',style: TextStyle(fontFamily: 'rb',fontSize: 15,fontWeight: FontWeight.bold,color: Color(0xff25E0B1)),),
+                }, child: Text('إلغاء',style: TextStyle(fontFamily: 'din',fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),),
                 
                 ),
               ),
@@ -40,12 +40,12 @@ class AlertDialogs {
             Expanded(
               child: Container(
                 height: 40,
-                decoration: BoxDecoration(color: Color(0xff0010037),
+                decoration: BoxDecoration(color: Color(0xff1D0D63),
                 borderRadius: BorderRadius.circular(5)),
                 child: TextButton(onPressed: (){
                      
                       exit(0);
-                    }, child: Text('تأكيد',style: TextStyle(fontFamily: 'rb',fontSize: 15,fontWeight: FontWeight.bold,color: Color(0xff25E0B1)),),
+                    }, child: Text('تأكيد',style: TextStyle(fontFamily: 'din',fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),),
                     
                     ),
               ),

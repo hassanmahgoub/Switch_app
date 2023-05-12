@@ -144,7 +144,8 @@ class _ProfileState extends State<Profile> {
                     Expanded(child: Container()),
                     InkWell(child: const Text('خروج',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
                     onTap: () async {
-                                          final action= await AlertDialogs.yesCancelDialog(context,'Logout','خروج من التطبيق؟');
+                                          // ignore: unused_local_variable
+                                          final action= await AlertDialogs.yesCancelDialog(context,'هل تريد الخروج من التطبيق؟','خروج من التطبيق؟');
 
                   },
                     ),

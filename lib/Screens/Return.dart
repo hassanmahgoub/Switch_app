@@ -31,7 +31,7 @@ class _ReturnState extends State<Return> {
             
          
          Padding(
-           padding: const EdgeInsets.symmetric(vertical: 200),
+           padding: const EdgeInsets.symmetric(vertical: 150),
            child: Stack(
              children:[ 
                Center(child: SvgPicture.asset('assets/images/Rectangle 916.svg')),
@@ -42,7 +42,7 @@ class _ReturnState extends State<Return> {
                const SizedBox(height: 25,),
                FormBuilder(
                               child: Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 25),
+                                padding: const EdgeInsets.symmetric(horizontal: 10),
                                 child: Container(
                                   decoration: BoxDecoration(
                                       color: Colors.white,
@@ -95,7 +95,7 @@ class _ReturnState extends State<Return> {
                             ),
                             const SizedBox(height: 10,),
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 25),
+                              padding: const EdgeInsets.symmetric(horizontal: 15),
                               child: InkWell(
                                 child: Container(height: 40,width: ScreenSize.width,
                                 decoration: BoxDecoration(color: const Color(0xff1D0D63),borderRadius: BorderRadius.circular(7)),

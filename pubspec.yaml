@@ -41,6 +41,8 @@ dependencies:
   curved_navigation_bar: ^1.0.3
   animated_svg: ^2.0.0
   flutter_slidable: ^3.0.0
+  custom_check_box: ^0.0.4
+  roundcheckbox: ^2.0.5
   
 
 dev_dependencies:

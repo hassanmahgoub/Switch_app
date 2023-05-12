@@ -133,7 +133,7 @@ class _HomeState extends State<Home> {
                 
                 const SizedBox(height: 40,),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: const [
@@ -143,7 +143,7 @@ class _HomeState extends State<Home> {
                 ),
                 const SizedBox(height: 10,),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Container(height: 181,width: ScreenSize.width,
                   decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(7),border: Border.all(width: 1,color: const Color(0xffD0E2E5),)),
                   child: Padding(
@@ -210,7 +210,7 @@ class _HomeState extends State<Home> {
                 ),
                 const SizedBox(height: 15,),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Container(height: 45,width: ScreenSize.width,
                   decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(7),border: Border.all(width: 1,color: const Color(0xffD0E2E5))),
                   child: Padding(
@@ -232,7 +232,7 @@ class _HomeState extends State<Home> {
                 ),
                 const SizedBox(height: 15,),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -240,12 +240,17 @@ class _HomeState extends State<Home> {
                         child: Container(height: 127,width: 0,decoration: BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(7),border: Border.all(width: 1,color: const Color(0xffD0E2E5))),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(vertical: 28),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children:  [
-                              SvgPicture.asset('assets/images/report.svg'),
-                            const Text('التقارير',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst bold',fontSize: 12,fontWeight: FontWeight.bold),),
-                          ],),
+                          child: InkWell(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children:  [
+                                SvgPicture.asset('assets/images/report.svg'),
+                              const Text('التقارير',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst bold',fontSize: 12,fontWeight: FontWeight.bold),),
+                            ],),
+                            onTap: () {
+                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Reports()));
+                            },
+                          ),
                         )
                         ),
                       ),

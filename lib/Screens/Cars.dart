@@ -100,7 +100,7 @@ class Cars extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(children: [
                Padding(
-          padding: const EdgeInsets.only(left: 30,top: 20,right: 30),
+          padding: const EdgeInsets.only(left: 15,top: 20,right: 15),
           child: Container(height: 45,width: ScreenSize.width,decoration: BoxDecoration(
             color: Colors.white,
             border: Border.all(width: 1,color: const Color(0xffD0E2E5)),
@@ -118,7 +118,7 @@ class Cars extends StatelessWidget {
           ),
           ),
         ),
-              const SizedBox(height: 40,),
+              const SizedBox(height: 20,),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
                 child: Row(
@@ -130,7 +130,7 @@ class Cars extends StatelessWidget {
               ),
               const SizedBox(height: 10,),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Container(height: 100,width: ScreenSize.width,decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(7),
@@ -194,7 +194,7 @@ class Cars extends StatelessWidget {
               ),
               const SizedBox(height: 10,),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Container(height: 100,width: ScreenSize.width,decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(7),
@@ -256,7 +256,7 @@ class Cars extends StatelessWidget {
               ),
               const SizedBox(height: 10,),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Container(height: 100,width: ScreenSize.width,decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(7),

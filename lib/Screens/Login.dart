@@ -51,7 +51,7 @@ class _LoginState extends State<Login> {
             const SizedBox(height: 20,),
           FormBuilder(
                              child: Padding(
-                               padding: const EdgeInsets.symmetric(horizontal: 25),
+                               padding: const EdgeInsets.symmetric(horizontal: 15),
                                child: Container(
                                  decoration: BoxDecoration(
                                      color: Colors.white,
@@ -102,7 +102,7 @@ class _LoginState extends State<Login> {
                            const SizedBox(height: 10,),
                            FormBuilder(
                              child: Padding(
-                               padding: const EdgeInsets.symmetric(horizontal: 25),
+                               padding: const EdgeInsets.symmetric(horizontal: 15),
                                child: Container(
                                  decoration: BoxDecoration(
                                      color: Colors.white,
@@ -151,7 +151,7 @@ class _LoginState extends State<Login> {
                            ),
                            const SizedBox(height: 12,),
                            Padding(
-                             padding: const EdgeInsets.symmetric(horizontal: 25),
+                             padding: const EdgeInsets.symmetric(horizontal: 15),
                              child: InkWell(
                                child: Container(height: 40,width: ScreenSize.width,
                                decoration: BoxDecoration(color: const Color(0xff1D0D63),borderRadius: BorderRadius.circular(7)),

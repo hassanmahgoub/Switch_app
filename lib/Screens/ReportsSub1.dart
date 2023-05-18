@@ -26,6 +26,7 @@ class _ReportsSub1State extends State<ReportsSub1> {
     var pickedImage = await Imagepicker.pickImage(source: ImageSource.camera);
   }
 
+  // ignore: unused_field, prefer_final_fields
   int _value = 1;
   @override
   Widget build(BuildContext context) {
@@ -419,7 +420,7 @@ class _ReportsSub1State extends State<ReportsSub1> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        MyDialog(),
+                        const MyDialog(),
                         Expanded(child: Container()),
                         const Text(
                           'الطبلون',

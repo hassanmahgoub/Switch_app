@@ -27,6 +27,7 @@ class _ReportsSub5State extends State<ReportsSub5> {
     var pickedImage = await Imagepicker.pickImage(source: ImageSource.camera);
   }
 
+  // ignore: unused_field, prefer_final_fields
   int _value = 1;
   @override
   Widget build(BuildContext context) {

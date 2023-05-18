@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class InformationEdit extends StatefulWidget {
@@ -10,6 +12,6 @@ class InformationEdit extends StatefulWidget {
 class _InformationEditState extends State<InformationEdit> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

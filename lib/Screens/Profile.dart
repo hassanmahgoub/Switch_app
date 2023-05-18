@@ -1,5 +1,4 @@
-// ignore: file_names
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, file_names
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -29,7 +28,9 @@ class _ProfileState extends State<Profile> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            const SizedBox(height: 80,),
+            const SizedBox(
+              height: 80,
+            ),
             Column(
               children: [
                 Padding(
@@ -37,130 +38,250 @@ class _ProfileState extends State<Profile> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                    InkWell(child: Icon(Icons.arrow_back_ios,color: Colors.white,size: 20,),
-                    onTap: () {
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home()));
-                    },
-                    ),InkWell(child: SvgPicture.asset('assets/images/Group 472 (3).svg'),
-                    
-                    
-                    onTap: (){
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>noti()));
-                    },
-                    ),
-                  ],),
+                      InkWell(
+                        child: Icon(
+                          Icons.arrow_back_ios,
+                          color: Colors.white,
+                          size: 20,
+                        ),
+                        onTap: () {
+                          Navigator.pushReplacement(context,
+                              MaterialPageRoute(builder: (context) => Home()));
+                        },
+                      ),
+                      InkWell(
+                        child:
+                            SvgPicture.asset('assets/images/Group 472 (3).svg'),
+                        onTap: () {
+                          Navigator.pushReplacement(context,
+                              MaterialPageRoute(builder: (context) => noti()));
+                        },
+                      ),
+                    ],
+                  ),
                 ),
-                const SizedBox(height: 40,),
-            Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text('!لؤي',style: TextStyle(color: Colors.white,fontFamily: 'sst bold',fontSize: 26),),
-            Text(',مرحباً',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst arabic',fontSize: 26),),
-            ],
-            ),
-            SizedBox(height: 10,),
-            SvgPicture.asset('assets/images/Group 2040.svg'),
-            const Text('ورشة العربة الذهبية',style: TextStyle(color: Colors.white,fontFamily: 'sst bold',fontSize: 18),),
-            const Text('الرياض، السعودية',style: TextStyle(color: Colors.white,fontFamily: 'din',fontSize: 16),),
-          
+                const SizedBox(
+                  height: 40,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Text(
+                      '!لؤي',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'sst bold',
+                          fontSize: 26),
+                    ),
+                    Text(
+                      ',مرحباً',
+                      style: TextStyle(
+                          color: Color(0xffBE1E2D),
+                          fontFamily: 'sst arabic',
+                          fontSize: 26),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                SvgPicture.asset('assets/images/Group 2040.svg'),
+                const Text(
+                  'ورشة العربة الذهبية',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'sst bold',
+                      fontSize: 18),
+                ),
+                const Text(
+                  'الرياض، السعودية',
+                  style: TextStyle(
+                      color: Colors.white, fontFamily: 'din', fontSize: 16),
+                ),
               ],
             ),
-            const SizedBox(height: 100,),
-            Container(height: ScreenSize.height,width: ScreenSize.width,decoration: const BoxDecoration(
-            color: Color(0xffF5F9F7),
-            borderRadius: BorderRadius.only(topLeft: Radius.circular(36),topRight: Radius.circular(36))
-          ),
-          child: Stack(
-            children:[ Column(children: [
-              const SizedBox(height: 30,),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: const [
-                  Text('الملف الشخصي',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst bold',fontSize: 16),),
-                ],),
-              ),
-              SizedBox(height: 20,),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children:  [
-                    Icon(Icons.arrow_back_ios,color: Color(0xff1D0D63),size: 15,),
-                    Expanded(child: Container()),
-                    InkWell(child: Text('تعديل معلوماتي',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
-                    onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>InformationEdit()));
-                    },
+            const SizedBox(
+              height: 100,
+            ),
+            Container(
+              height: ScreenSize.height,
+              width: ScreenSize.width,
+              decoration: const BoxDecoration(
+                  color: Color(0xffF5F9F7),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(36),
+                      topRight: Radius.circular(36))),
+              child: Stack(children: [
+                Column(
+                  children: [
+                    const SizedBox(
+                      height: 30,
                     ),
-                    SizedBox(width: 25,),
-                    SvgPicture.asset('assets/images/Group 81.svg'),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: const [
+                          Text(
+                            'الملف الشخصي',
+                            style: TextStyle(
+                                color: Color(0xffBE1E2D),
+                                fontFamily: 'sst bold',
+                                fontSize: 16),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(
+                            Icons.arrow_back_ios,
+                            color: Color(0xff1D0D63),
+                            size: 15,
+                          ),
+                          Expanded(child: Container()),
+                          InkWell(
+                            child: Text(
+                              'تعديل معلوماتي',
+                              style: TextStyle(
+                                  color: Color(0xff1D0D63),
+                                  fontFamily: 'din',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => InformationEdit()));
+                            },
+                          ),
+                          SizedBox(
+                            width: 25,
+                          ),
+                          SvgPicture.asset('assets/images/Group 81.svg'),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          const Icon(
+                            Icons.arrow_back_ios,
+                            color: Color(0xff1D0D63),
+                            size: 15,
+                          ),
+                          Expanded(child: Container()),
+                          InkWell(
+                            child: Text(
+                              'تغيير كلمة المرور',
+                              style: TextStyle(
+                                  color: Color(0xff1D0D63),
+                                  fontFamily: 'din',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => PasswordChange()));
+                            },
+                          ),
+                          SizedBox(
+                            width: 25,
+                          ),
+                          SvgPicture.asset('assets/images/Group 83.svg')
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(
+                            Icons.arrow_back_ios,
+                            color: Color(0xff1D0D63),
+                            size: 15,
+                          ),
+                          Expanded(child: Container()),
+                          InkWell(
+                            child: Text(
+                              'تغيير اللغة',
+                              style: TextStyle(
+                                  color: Color(0xff1D0D63),
+                                  fontFamily: 'din',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => LanguageChange()));
+                            },
+                          ),
+                          SizedBox(
+                            width: 25,
+                          ),
+                          SvgPicture.asset('assets/images/Group 2041.svg'),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 30),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Expanded(child: Container()),
+                          InkWell(
+                            child: const Text(
+                              'خروج',
+                              style: TextStyle(
+                                  color: Color(0xff1D0D63),
+                                  fontFamily: 'din',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            onTap: () async {
+                              // ignore: unused_local_variable
+                              final action = await AlertDialogs.yesCancelDialog(
+                                  context,
+                                  'هل تريد الخروج من التطبيق؟',
+                                  'خروج من التطبيق؟');
+                            },
+                          ),
+                          SizedBox(
+                            width: 25,
+                          ),
+                          SvgPicture.asset('assets/images/Group 2034.svg'),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
-              ),
-              const SizedBox(height: 20,),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children:  [
-                    const Icon(Icons.arrow_back_ios,color: Color(0xff1D0D63),size: 15,),
-                    Expanded(child: Container()),
-                    InkWell(child: Text('تغيير كلمة المرور',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
-                    onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>PasswordChange()));
-                    },
-                    ),
-                    SizedBox(width: 25,),
-                    SvgPicture.asset('assets/images/Group 83.svg')
-                  ],
-                ),
-              ),
-              const SizedBox(height: 20,),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children:  [
-                    Icon(Icons.arrow_back_ios,color: Color(0xff1D0D63),size: 15,),
-                    Expanded(child: Container()),
-                    InkWell(child: Text('تغيير اللغة',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
-                    onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>LanguageChange()));
-                    },
-                    ),
-                    SizedBox(width: 25,),
-                    SvgPicture.asset('assets/images/Group 2041.svg'),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 20,),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children:  [
-                    Expanded(child: Container()),
-                    InkWell(child: const Text('خروج',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'din',fontSize: 16,fontWeight: FontWeight.bold),),
-                    onTap: () async {
-                                          // ignore: unused_local_variable
-                                          final action= await AlertDialogs.yesCancelDialog(context,'هل تريد الخروج من التطبيق؟','خروج من التطبيق؟');
-
-                  },
-                    ),
-                  SizedBox(width: 25,),
-                  SvgPicture.asset('assets/images/Group 2034.svg'),
-                  ],
-                ),
-              ),
-              
-            ],),
-            
-          ]),
-          ),
-          
-        ],),
+              ]),
+            ),
+          ],
+        ),
       ),
     );
   }

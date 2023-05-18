@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class PasswordChange extends StatefulWidget {
@@ -10,6 +12,6 @@ class PasswordChange extends StatefulWidget {
 class _PasswordChangeState extends State<PasswordChange> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

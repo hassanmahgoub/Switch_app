@@ -32,241 +32,503 @@ class _OrdersState extends State<Orders> {
       backgroundColor: const Color(0xff010037),
       body: Stack(children: [
         Padding(
-          padding: const EdgeInsets.only(top: 80,left: 30,right: 30),
+          padding: const EdgeInsets.only(top: 80, left: 30, right: 30),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-            InkWell(child: const Icon(Icons.arrow_back_ios,size: 20, color: Color(0xffF5F9F7)),
-            onTap: () {
-              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Cars()));
-            },
-            ),
-            SvgPicture.asset('assets/images/Group 2056.svg')
-          ],),
+              InkWell(
+                child: const Icon(Icons.arrow_back_ios,
+                    size: 20, color: Color(0xffF5F9F7)),
+                onTap: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => const Cars()));
+                },
+              ),
+              SvgPicture.asset('assets/images/Group 2056.svg')
+            ],
+          ),
         ),
         Padding(
           padding: const EdgeInsets.only(top: 200),
           child: Container(
             height: screenSize.height,
             decoration: const BoxDecoration(
-                color: Colors.white, borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))),
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20))),
             child: SingleChildScrollView(
               child: Column(
-                children:  [
-                  
+                children: [
                   const SizedBox(
                     height: 15,
                   ),
                   const Padding(
-                    padding: EdgeInsets.only(left: 22,right: 22,top: 60),
+                    padding: EdgeInsets.only(left: 22, right: 22, top: 60),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 30),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                      CircularPercentIndicator(
-                        radius: 35.0,
-                    lineWidth: 6.5,
-                    backgroundWidth: 3,
-                    animationDuration: 500,
-                    percent: 0.27,
-                    circularStrokeCap: CircularStrokeCap.round,
-                    backgroundColor: const Color(0xff0474E1),
-                    center:  const Text("75%"),
-                    progressColor: const Color(0xFf1D0D63),
-                      
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          
+                        CircularPercentIndicator(
+                          radius: 35.0,
+                          lineWidth: 6.5,
+                          backgroundWidth: 3,
+                          animationDuration: 500,
+                          percent: 0.27,
+                          circularStrokeCap: CircularStrokeCap.round,
+                          backgroundColor: const Color(0xff0474E1),
+                          center: const Text("75%"),
+                          progressColor: const Color(0xFf1D0D63),
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            InkWell(
+                              child: const Row(
+                                children: [
+                                  Text(
+                                    'CLS 350 (2012)',
+                                    style: TextStyle(
+                                        color: Color(0xff1D0D63),
+                                        fontFamily: 'sst bold',
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(
+                                    width: 5,
+                                  ),
+                                  Text(
+                                    'مرسيدس',
+                                    style: TextStyle(
+                                        color: Color(0xff1D0D63),
+                                        fontFamily: 'sst bold',
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                              onTap: () {
+                                Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const Orders()));
+                              },
+                            ),
+                            const Text(
+                              'KMHD641UGHU321730',
+                              style: TextStyle(
+                                  color: Color(0xff0474E1),
+                                  fontFamily: 'sst bold',
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            const Row(
+                              children: [
+                                Text(
+                                  '2154',
+                                  style: TextStyle(
+                                      color: Color(0xffBE1E2D),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  'رقم الطلب',
+                                  style: TextStyle(
+                                      color: Color(0xff1D0D63),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Divider(
+                    endIndent: 20,
+                    indent: 20,
+                    thickness: 1,
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
                         InkWell(
-                          child: Row(
-                            children: const [
-                              Text('CLS 350 (2012)',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst bold',fontSize: 12,fontWeight: FontWeight.bold),),
-                            SizedBox(width: 5,),
-                            Text('مرسيدس',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst bold',fontSize: 12,fontWeight: FontWeight.bold),),
-                            ],
-                          ),
+                          child: Column(children: [
+                            SvgPicture.asset('assets/images/Group 2072.svg'),
+                            const Text(
+                              'الداخلية',
+                              style: TextStyle(
+                                  color: Color(0xffBE1E2D),
+                                  fontFamily: 'sst arabic',
+                                  fontSize: 10),
+                            ),
+                            //const SizedBox(height: 10,),
+                            const Row(
+                              children: [
+                                Text(
+                                  'نقطة',
+                                  style: TextStyle(
+                                      color: Color(0xff1D0D63),
+                                      fontFamily: 'sst arabic',
+                                      fontSize: 10),
+                                ),
+                                SizedBox(
+                                  width: 3,
+                                ),
+                                Text(
+                                  '26',
+                                  style: TextStyle(
+                                      color: Color(0xff3D9FD7),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 13),
+                                ),
+                              ],
+                            )
+                          ]),
                           onTap: () {
-                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Orders()));
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ReportsSub()));
                           },
                         ),
-                        const Text('KMHD641UGHU321730',style: TextStyle(color: Color(0xff0474E1),fontFamily: 'sst bold',fontSize: 12,fontWeight: FontWeight.bold),),
-                        Row(
-                          children: const [
-                            Text('2154',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst bold',fontSize: 14,fontWeight: FontWeight.bold),),
-                            SizedBox(width: 5,),
-                            Text('رقم الطلب',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst bold',fontSize: 10,fontWeight: FontWeight.bold),),
-                          ],
+                        InkWell(
+                          child: Column(children: [
+                            SvgPicture.asset('assets/images/Group 2070.svg'),
+                            const Text(
+                              'البودي',
+                              style: TextStyle(
+                                  color: Color(0xffBE1E2D),
+                                  fontFamily: 'sst bold',
+                                  fontSize: 10),
+                            ),
+                            const Row(
+                              children: [
+                                Text(
+                                  'نقطة',
+                                  style: TextStyle(
+                                      color: Color(0xff1D0D63),
+                                      fontFamily: 'sst arabic',
+                                      fontSize: 10),
+                                ),
+                                SizedBox(
+                                  width: 3,
+                                ),
+                                Text(
+                                  '25',
+                                  style: TextStyle(
+                                      color: Color(0xff3D9FD7),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 13),
+                                ),
+                              ],
+                            )
+                          ]),
+                          onTap: () {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ReportsSub1()));
+                          },
                         ),
-                      ],),
-                    ],),
+                        InkWell(
+                          child: Column(children: [
+                            SvgPicture.asset('assets/images/Group 2068.svg'),
+                            const Text(
+                              'المحرك',
+                              style: TextStyle(
+                                  color: Color(0xffBE1E2D),
+                                  fontFamily: 'sst bold',
+                                  fontSize: 10),
+                            ),
+                            const Row(
+                              children: [
+                                Text(
+                                  'نقطة',
+                                  style: TextStyle(
+                                      color: Color(0xff1D0D63),
+                                      fontFamily: 'sst arabic',
+                                      fontSize: 10),
+                                ),
+                                SizedBox(
+                                  width: 3,
+                                ),
+                                Text(
+                                  '70',
+                                  style: TextStyle(
+                                      color: Color(0xff3D9FD7),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 13),
+                                ),
+                              ],
+                            )
+                          ]),
+                          onTap: () {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ReportsSub2()));
+                          },
+                        ),
+                        InkWell(
+                          child: Column(children: [
+                            SvgPicture.asset('assets/images/Group 2066.svg'),
+                            const Text(
+                              'الهيكل',
+                              style: TextStyle(
+                                  color: Color(0xffBE1E2D),
+                                  fontFamily: 'sst bold',
+                                  fontSize: 10),
+                            ),
+                            const Row(
+                              children: [
+                                Text(
+                                  'نقطة',
+                                  style: TextStyle(
+                                      color: Color(0xff1D0D63),
+                                      fontFamily: 'sst arabic',
+                                      fontSize: 10),
+                                ),
+                                SizedBox(
+                                  width: 3,
+                                ),
+                                Text(
+                                  '15',
+                                  style: TextStyle(
+                                      color: Color(0xff3D9FD7),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 13),
+                                ),
+                              ],
+                            )
+                          ]),
+                          onTap: () {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ReportsSub3()));
+                          },
+                        ),
+                      ],
+                    ),
                   ),
-                  const SizedBox(height: 10,),
-                  const Divider(endIndent: 20,indent: 20,thickness: 1,),
-                   const SizedBox(height: 10,),
-                   Padding(
-                     padding: const EdgeInsets.symmetric(horizontal: 30),
-                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        
-                      InkWell(
-                        child: Column(children:[ SvgPicture.asset('assets/images/Group 2072.svg'),
-                        const Text('الداخلية',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst arabic',fontSize: 10),),
-                        //const SizedBox(height: 10,),
-                        Row(
-                          children: const [
-                            Text('نقطة',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst arabic',fontSize: 10),),
-                          SizedBox(width: 3,),
-                          Text('26',style: TextStyle(color: Color(0xff3D9FD7),fontFamily: 'sst bold',fontSize: 13),),
-                          ],
-                        )
-                        ]),
-                        onTap: () {
-                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const ReportsSub()));
-                        },
-                      ),
-                      InkWell(
-                        child: Column(children:[ SvgPicture.asset('assets/images/Group 2070.svg'),
-                        const Text('البودي',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst bold',fontSize: 10),),
-                        Row(
-                          children: const [
-                            Text('نقطة',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst arabic',fontSize: 10),),
-                          SizedBox(width: 3,),
-                          Text('25',style: TextStyle(color: Color(0xff3D9FD7),fontFamily: 'sst bold',fontSize: 13),),
-                          ],
-                        )
-                        ]),
-                        onTap: () {
-                           Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const ReportsSub1()));
-                        },
-                      ),
-                      InkWell(
-                        child: Column(children:[ SvgPicture.asset('assets/images/Group 2068.svg'),
-                        const Text('المحرك',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst bold',fontSize: 10),),
-                        Row(
-                          children: const [
-                            Text('نقطة',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst arabic',fontSize: 10),),
-                            SizedBox(width: 3,),
-                            Text('70',style: TextStyle(color: Color(0xff3D9FD7),fontFamily: 'sst bold',fontSize: 13),),
-                      
-                          ],
-                        )
-                        ]),
-                        onTap: () {
-                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const ReportsSub2()));
-                        },
-                      ),
-                      InkWell(
-                        child: Column(children:[ SvgPicture.asset('assets/images/Group 2066.svg'),
-                        const Text('الهيكل',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst bold',fontSize: 10),),
-                        Row(
-                          children: const [
-                            Text('نقطة',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst arabic',fontSize: 10),),
-                          SizedBox(width: 3,),
-                          Text('15',style: TextStyle(color: Color(0xff3D9FD7),fontFamily: 'sst bold',fontSize: 13),),
-                          ],
-                        )
-                        
-                        ]),
-                        onTap: () {
-                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const ReportsSub3()));
-                        },
-                      ),
-                                     ],),
-                   ),
-                   const SizedBox(height: 20,),
-                   Padding(
-                     padding: const EdgeInsets.symmetric(horizontal: 30),
-                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        
-                      InkWell(
-                        child: Column(children:[ SvgPicture.asset('assets/images/Group 2106.svg'),
-                        const Text('فحص طريق',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst arabic',fontSize: 10),),
-                        //const SizedBox(height: 10,),
-                        Row(
-                          children: const [
-                            Text('نقطة',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst arabic',fontSize: 10),),
-                          SizedBox(width: 3,),
-                          Text('20',style: TextStyle(color: Color(0xff3D9FD7),fontFamily: 'sst bold',fontSize: 13),),
-                          ],
-                        )
-                        ]),
-                        onTap: () {
-                           Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const ReportsSub4()));
-                        },
-                      ),
-                      InkWell(
-                        child: Column(children:[ SvgPicture.asset('assets/images/Group 2079.svg'),
-                        const Text('الكهرباء',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst bold',fontSize: 10),),
-                        Row(
-                          children: const [
-                            Text('نقطة',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst arabic',fontSize: 10),),
-                          SizedBox(width: 3,),
-                          Text('20',style: TextStyle(color: Color(0xff3D9FD7),fontFamily: 'sst bold',fontSize: 13),),
-                          ],
-                        )
-                        ]),
-                        onTap: () {
-                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const ReportsSub5()));
-                        },
-                      ),
-                      InkWell(
-                        child: Column(children:[ SvgPicture.asset('assets/images/Group 2075.svg'),
-                        const Text('الفرامل',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst bold',fontSize: 10),),
-                        Row(
-                          children: const [
-                            Text('نقطة',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst arabic',fontSize: 10),),
-                            SizedBox(width: 3,),
-                            Text('70',style: TextStyle(color: Color(0xff3D9FD7),fontFamily: 'sst bold',fontSize: 13),),
-                      
-                          ],
-                        )
-                        ]),
-                        onTap: () {
-                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const ReportsSub6()));
-                        },
-                      ),
-                      InkWell(
-                        child: Column(children:[ SvgPicture.asset('assets/images/Group 2077.svg'),
-                        const Text('الاطارات',style: TextStyle(color: Color(0xffBE1E2D),fontFamily: 'sst bold',fontSize: 10),),
-                        Row(
-                          children: const [
-                            Text('نقطة',style: TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst arabic',fontSize: 10),),
-                          SizedBox(width: 3,),
-                          Text('15',style: TextStyle(color: Color(0xff3D9FD7),fontFamily: 'sst bold',fontSize: 13),),
-                          ],
-                        ),
-                        
-                        ]),
-                        onTap: () {
-                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const ReportsSub7()));
-                        },
-                      ),
-                                     ],),
-                   ),
-                   const SizedBox(height: 180,),
+                  const SizedBox(
+                    height: 20,
+                  ),
                   Padding(
-                   padding: const EdgeInsets.symmetric(horizontal: 25),
-                   child: InkWell(
-                     child: Container(height: 40,width: screenSize.width,
-                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(7),
-                     color: const Color(0xff1D0D63)
-                     ),
-                     child: const Center(child: Text('إغلاق التقرير وارسال للمراجعة',style: TextStyle(color: Colors.white,fontFamily: 'sst bold',fontSize: 16),)),
-                     ),
-                     onTap: () {
-                       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Cars()));
-                     },
-                   ),
-                 ),
-                 const SizedBox(height: 40,)
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        InkWell(
+                          child: Column(children: [
+                            SvgPicture.asset('assets/images/Group 2106.svg'),
+                            const Text(
+                              'فحص طريق',
+                              style: TextStyle(
+                                  color: Color(0xffBE1E2D),
+                                  fontFamily: 'sst arabic',
+                                  fontSize: 10),
+                            ),
+                            //const SizedBox(height: 10,),
+                            const Row(
+                              children: [
+                                Text(
+                                  'نقطة',
+                                  style: TextStyle(
+                                      color: Color(0xff1D0D63),
+                                      fontFamily: 'sst arabic',
+                                      fontSize: 10),
+                                ),
+                                SizedBox(
+                                  width: 3,
+                                ),
+                                Text(
+                                  '20',
+                                  style: TextStyle(
+                                      color: Color(0xff3D9FD7),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 13),
+                                ),
+                              ],
+                            )
+                          ]),
+                          onTap: () {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ReportsSub4()));
+                          },
+                        ),
+                        InkWell(
+                          child: Column(children: [
+                            SvgPicture.asset('assets/images/Group 2079.svg'),
+                            const Text(
+                              'الكهرباء',
+                              style: TextStyle(
+                                  color: Color(0xffBE1E2D),
+                                  fontFamily: 'sst bold',
+                                  fontSize: 10),
+                            ),
+                            const Row(
+                              children: [
+                                Text(
+                                  'نقطة',
+                                  style: TextStyle(
+                                      color: Color(0xff1D0D63),
+                                      fontFamily: 'sst arabic',
+                                      fontSize: 10),
+                                ),
+                                SizedBox(
+                                  width: 3,
+                                ),
+                                Text(
+                                  '20',
+                                  style: TextStyle(
+                                      color: Color(0xff3D9FD7),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 13),
+                                ),
+                              ],
+                            )
+                          ]),
+                          onTap: () {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ReportsSub5()));
+                          },
+                        ),
+                        InkWell(
+                          child: Column(children: [
+                            SvgPicture.asset('assets/images/Group 2075.svg'),
+                            const Text(
+                              'الفرامل',
+                              style: TextStyle(
+                                  color: Color(0xffBE1E2D),
+                                  fontFamily: 'sst bold',
+                                  fontSize: 10),
+                            ),
+                            const Row(
+                              children: [
+                                Text(
+                                  'نقطة',
+                                  style: TextStyle(
+                                      color: Color(0xff1D0D63),
+                                      fontFamily: 'sst arabic',
+                                      fontSize: 10),
+                                ),
+                                SizedBox(
+                                  width: 3,
+                                ),
+                                Text(
+                                  '70',
+                                  style: TextStyle(
+                                      color: Color(0xff3D9FD7),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 13),
+                                ),
+                              ],
+                            )
+                          ]),
+                          onTap: () {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ReportsSub6()));
+                          },
+                        ),
+                        InkWell(
+                          child: Column(children: [
+                            SvgPicture.asset('assets/images/Group 2077.svg'),
+                            const Text(
+                              'الاطارات',
+                              style: TextStyle(
+                                  color: Color(0xffBE1E2D),
+                                  fontFamily: 'sst bold',
+                                  fontSize: 10),
+                            ),
+                            const Row(
+                              children: [
+                                Text(
+                                  'نقطة',
+                                  style: TextStyle(
+                                      color: Color(0xff1D0D63),
+                                      fontFamily: 'sst arabic',
+                                      fontSize: 10),
+                                ),
+                                SizedBox(
+                                  width: 3,
+                                ),
+                                Text(
+                                  '15',
+                                  style: TextStyle(
+                                      color: Color(0xff3D9FD7),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 13),
+                                ),
+                              ],
+                            ),
+                          ]),
+                          onTap: () {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ReportsSub7()));
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 180,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 25),
+                    child: InkWell(
+                      child: Container(
+                        height: 40,
+                        width: screenSize.width,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(7),
+                            color: const Color(0xff1D0D63)),
+                        child: const Center(
+                            child: Text(
+                          'إغلاق التقرير وارسال للمراجعة',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'sst bold',
+                              fontSize: 16),
+                        )),
+                      ),
+                      onTap: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Cars()));
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 40,
+                  )
                 ],
               ),
             ),
@@ -276,9 +538,9 @@ class _OrdersState extends State<Orders> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 140,right: 40),
+              padding: const EdgeInsets.only(top: 140, right: 40),
               child: Column(
-                children:  [
+                children: [
                   ClipRRect(
                     borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(50),
@@ -291,20 +553,17 @@ class _OrdersState extends State<Orders> {
                         radius: 60,
                         backgroundColor: Colors.white,
                         child: SvgPicture.asset('assets/images/Group 2020.svg'),
-                          ),
                       ),
-                      ),
-                 
+                    ),
+                  ),
                 ],
               ),
             ),
           ],
         ),
-        
       ]),
     );
   }
 }
 
-class RepoetSub {
-}
+class RepoetSub {}

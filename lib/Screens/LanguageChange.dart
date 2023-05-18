@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class LanguageChange extends StatefulWidget {
@@ -10,6 +12,6 @@ class LanguageChange extends StatefulWidget {
 class _LanguageChangeState extends State<LanguageChange> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

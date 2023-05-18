@@ -43,6 +43,9 @@ dependencies:
   flutter_slidable: ^3.0.0
   custom_check_box: ^0.0.4
   roundcheckbox: ^2.0.5
+  image_picker: ^0.8.7+5
+  auto_size_text: ^3.0.0
+  
   
 
 dev_dependencies:

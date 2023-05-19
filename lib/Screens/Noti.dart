@@ -220,7 +220,7 @@ class _notiState extends State<noti> {
                               overflow: TextOverflow.ellipsis),
                         ),
                         Text(
-                          'كل عام عام وانتم بخير، تطبيق سويتش يهنيكم بعد الفطر المبارك',
+                          'كل عام وانتم بخير، تطبيق سويتش يهنيكم بعد الفطر المبارك',
                           style: TextStyle(
                               color: Color(0xff1D0D63),
                               fontFamily: 'sst arabic',

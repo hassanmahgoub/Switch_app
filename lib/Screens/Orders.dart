@@ -8,13 +8,6 @@ import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:switch_app/Screens/Cars.dart';
 
 import 'ReportsSub.dart';
-import 'ReportsSub1.dart';
-import 'ReportsSub2.dart';
-import 'ReportsSub3.dart';
-import 'ReportsSub4.dart';
-import 'ReportsSub5.dart';
-import 'ReportsSub6.dart';
-import 'ReportsSub7.dart';
 
 class Orders extends StatefulWidget {
   const Orders({Key? key}) : super(key: key);
@@ -245,7 +238,7 @@ class _OrdersState extends State<Orders> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const ReportsSub1()));
+                                    builder: (context) => const ReportsSub()));
                           },
                         ),
                         InkWell(
@@ -284,7 +277,7 @@ class _OrdersState extends State<Orders> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const ReportsSub2()));
+                                    builder: (context) => const ReportsSub()));
                           },
                         ),
                         InkWell(
@@ -323,7 +316,7 @@ class _OrdersState extends State<Orders> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const ReportsSub3()));
+                                    builder: (context) => const ReportsSub()));
                           },
                         ),
                       ],
@@ -374,7 +367,7 @@ class _OrdersState extends State<Orders> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const ReportsSub4()));
+                                    builder: (context) => const ReportsSub()));
                           },
                         ),
                         InkWell(
@@ -413,7 +406,7 @@ class _OrdersState extends State<Orders> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const ReportsSub5()));
+                                    builder: (context) => const ReportsSub()));
                           },
                         ),
                         InkWell(
@@ -452,7 +445,7 @@ class _OrdersState extends State<Orders> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const ReportsSub6()));
+                                    builder: (context) => const ReportsSub()));
                           },
                         ),
                         InkWell(
@@ -491,7 +484,7 @@ class _OrdersState extends State<Orders> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const ReportsSub7()));
+                                    builder: (context) => const ReportsSub()));
                           },
                         ),
                       ],

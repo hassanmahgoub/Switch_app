@@ -1,22 +1,16 @@
 // ignore_for_file: file_names
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
 import '../Widgets/reportContainer.dart';
 import 'Cars.dart';
 import 'Home.dart';
 import 'Noti.dart';
 import 'Profile.dart';
-import 'Vehicles.dart';
-
 class Reports extends StatefulWidget {
   const Reports({super.key});
-
   @override
   State<Reports> createState() => _ReportsState();
 }
-
 class _ReportsState extends State<Reports> {
   @override
   Widget build(BuildContext context) {
@@ -63,29 +57,21 @@ class _ReportsState extends State<Reports> {
                               builder: (context) => const Profile()));
                     },
                   ),
-                  InkWell(
-                    child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          SvgPicture.asset(
-                            'assets/images/Group 2064.svg',
-                            height: 20,
-                          ),
-                          const Text(
-                            'المركبات',
-                            style: TextStyle(
-                                fontFamily: 'sst bold',
-                                fontSize: 9,
-                                color: Colors.white),
-                          )
-                        ]),
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Vehicles()));
-                    },
-                  ),
+                  Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SvgPicture.asset(
+                          'assets/images/Group 2064.svg',
+                          height: 20,
+                        ),
+                        const Text(
+                          'المركبات',
+                          style: TextStyle(
+                              fontFamily: 'sst bold',
+                              fontSize: 9,
+                              color: Colors.white),
+                        )
+                      ]),
                   const SizedBox(
                     width: 5,
                   ),

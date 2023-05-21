@@ -14,6 +14,10 @@ class MyDialog extends StatefulWidget {
 }
 
 class _MyDialogState extends State<MyDialog> {
+   int selectedValue = 0;
+   int selectedValue1 =0;
+  @override
+  // ignore: override_on_non_overriding_member
   late File image;
   // ignore: non_constant_identifier_names
   final Imagepicker = ImagePicker();
@@ -21,11 +25,9 @@ class _MyDialogState extends State<MyDialog> {
     // ignore: unused_local_variable
     var pickedImage = await Imagepicker.pickImage(source: ImageSource.camera);
     // ignore: unused_local_variable, no_leading_underscores_for_local_identifiers
-    int _value = 1;
   }
 
   // ignore: prefer_final_fields
-  int _value = 1;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -76,8 +78,10 @@ class _MyDialogState extends State<MyDialog> {
                           Radio(
                               activeColor: const Color(0xff1D0D63),
                               value: 1,
-                              groupValue: _value,
-                              onChanged: (value) {}),
+                              groupValue: selectedValue,
+                              onChanged: (value) => setState(()=> selectedValue = 1
+                              )
+                            ),
                         ],
                       ),
                       Row(
@@ -97,10 +101,12 @@ class _MyDialogState extends State<MyDialog> {
                             ),
                           ),
                           Radio(
+                            
                               activeColor: const Color(0xff1D0D63),
-                              value: 2,
-                              groupValue: _value,
-                              onChanged: (value) {}),
+                              value: 1,
+                              groupValue: selectedValue1,
+                              onChanged: (value) => setState (()=> selectedValue1 = 0
+                              ))
                         ],
                       ),
                       Container(

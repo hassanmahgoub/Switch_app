@@ -12,6 +12,8 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 class _HomeState extends State<Home> {
+  bool animate = false;
+  
   @override
   Widget build(BuildContext context) {
     // ignore: non_constant_identifier_names
@@ -440,7 +442,7 @@ class _HomeState extends State<Home> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     SvgPicture.asset(
-                                        'assets/images/report.svg'),
+                                        'assets/images/report.svg',height: 40,),
                                     const Text(
                                       'التقارير',
                                       style: TextStyle(
@@ -516,4 +518,11 @@ class _HomeState extends State<Home> {
       ]),
     );
   }
+  // Future startAnimation() async{
+  //   await Future.delayed(Duration(milliseconds: 500));
+  //   setState(() => animate = true,);
+  //   await Future.delayed(Duration(milliseconds: 5000));
+  //   // ignore: use_build_context_synchronously
+  // }
 }
+

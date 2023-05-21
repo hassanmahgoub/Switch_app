@@ -1,7 +1,6 @@
 // ignore_for_file: implementation_imports, unnecessary_import, file_names, unused_local_variable, non_constant_identifier_names
 
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -27,7 +26,6 @@ class _ReportsSubState extends State<ReportsSub> {
   }
 
   // ignore: unused_field, prefer_final_fields
-  int _value = 1;
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -494,6 +492,7 @@ class _ReportsSubState extends State<ReportsSub> {
                       ),
                     ),
                   ),
+                  
                 ],
               ),
             ),

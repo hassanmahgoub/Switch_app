@@ -15,6 +15,12 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  // bool animate =false;
+  // @override
+  // void initState() {
+  //   startAnimation();
+  //   super.initState();
+  // }
   @override
   Widget build(BuildContext context) {
     // ignore: non_constant_identifier_names
@@ -239,4 +245,11 @@ class _LoginState extends State<Login> {
           )
         ]));
   }
+  // Future startAnimation() async{
+  //   await Future.delayed(Duration(milliseconds: 500));
+  //   setState(() => animate = true,);
+  //   await Future.delayed(Duration(milliseconds: 5000));
+  //   // ignore: use_build_context_synchronously
+  //   Navigator.push(context, MaterialPageRoute(builder: (context)=> Login()));
+  // }
 }

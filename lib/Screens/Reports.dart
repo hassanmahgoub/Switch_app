@@ -23,106 +23,108 @@ class _ReportsState extends State<Reports> {
     // ignore: non_constant_identifier_names
     final ScreenSize = MediaQuery.of(context).size;
     return Scaffold(
-      bottomNavigationBar: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Container(
-          height: 74,
-          decoration: const BoxDecoration(
-              color: Color(0xff1D0D63),
-              borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(20),
-                  topRight: Radius.circular(20),
-                  bottomLeft: Radius.circular(7),
-                  bottomRight: Radius.circular(7))),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                InkWell(
-                  child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/images/Group 96.svg',
-                          height: 20,
-                        ),
-                        const Text(
-                          'حسابي',
-                          style: TextStyle(
-                              fontFamily: 'sst bold',
-                              fontSize: 9,
-                              color: Colors.white),
-                        )
-                      ]),
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const Profile()));
-                  },
-                ),
-                InkWell(
-                  child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/images/Group 2064.svg',
-                          height: 20,
-                        ),
-                        const Text(
-                          'المركبات',
-                          style: TextStyle(
-                              fontFamily: 'sst bold',
-                              fontSize: 9,
-                              color: Colors.white),
-                        )
-                      ]),
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const Vehicles()));
-                  },
-                ),
-                const SizedBox(
-                  width: 5,
-                ),
-                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                  SvgPicture.asset(
-                    'assets/images/Group 2062 (1).svg',
-                    height: 20,
+      bottomNavigationBar: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Container(
+            height: 74,
+            decoration: const BoxDecoration(
+                color: Color(0xff1D0D63),
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20),
+                    bottomLeft: Radius.circular(7),
+                    bottomRight: Radius.circular(7))),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  InkWell(
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SvgPicture.asset(
+                            'assets/images/Group 96.svg',
+                            height: 20,
+                          ),
+                          const Text(
+                            'حسابي',
+                            style: TextStyle(
+                                fontFamily: 'sst bold',
+                                fontSize: 9,
+                                color: Colors.white),
+                          )
+                        ]),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Profile()));
+                    },
                   ),
-                  const Text(
-                    'التقارير',
-                    style: TextStyle(
-                        fontFamily: 'sst bold',
-                        fontSize: 9,
-                        color: Colors.white),
+                  InkWell(
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SvgPicture.asset(
+                            'assets/images/Group 2064.svg',
+                            height: 20,
+                          ),
+                          const Text(
+                            'المركبات',
+                            style: TextStyle(
+                                fontFamily: 'sst bold',
+                                fontSize: 9,
+                                color: Colors.white),
+                          )
+                        ]),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Vehicles()));
+                    },
+                  ),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+                    SvgPicture.asset(
+                      'assets/images/Group 2062 (1).svg',
+                      height: 20,
+                    ),
+                    const Text(
+                      'التقارير',
+                      style: TextStyle(
+                          fontFamily: 'sst bold',
+                          fontSize: 9,
+                          color: Colors.white),
+                    )
+                  ]),
+                  InkWell(
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SvgPicture.asset(
+                            'assets/images/Icon ionic-md-paper.svg',
+                            height: 20,
+                          ),
+                          const Text(
+                            'الطلبات',
+                            style: TextStyle(
+                                fontFamily: 'sst bold',
+                                fontSize: 9,
+                                color: Colors.white),
+                          )
+                        ]),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => const Cars()));
+                    },
                   )
-                ]),
-                InkWell(
-                  child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/images/Icon ionic-md-paper.svg',
-                          height: 20,
-                        ),
-                        const Text(
-                          'الطلبات',
-                          style: TextStyle(
-                              fontFamily: 'sst bold',
-                              fontSize: 9,
-                              color: Colors.white),
-                        )
-                      ]),
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const Cars()));
-                  },
-                )
-              ],
+                ],
+              ),
             ),
           ),
         ),

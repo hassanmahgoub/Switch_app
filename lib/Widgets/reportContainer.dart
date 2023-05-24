@@ -1,7 +1,10 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_svg/svg.dart';
 
+// ignore: camel_case_types
 class reportContainer extends StatefulWidget {
   const reportContainer({super.key});
 

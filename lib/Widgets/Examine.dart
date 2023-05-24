@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
@@ -14,6 +16,7 @@ class Examine extends StatefulWidget {
 class _ExamineState extends State<Examine> {
   @override
   Widget build(BuildContext context) {
+    // ignore: non_constant_identifier_names
     final ScreenSize = MediaQuery.of(context).size;
     return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15),

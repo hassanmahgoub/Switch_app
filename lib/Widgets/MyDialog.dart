@@ -109,21 +109,49 @@ class _MyDialogState extends State<MyDialog> {
                               ))
                         ],
                       ),
-                      Container(
-                        height: 80,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(7),
-                            border: Border.all(
-                                width: 1, color: const Color(0xff1D0D63))),
-                        child: const Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 10),
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [],
-                          ),
-                        ),
-                      ),
+                      TextField(),
+                      // Container(
+                      //     height: 80,
+                      //   decoration: BoxDecoration(
+                      //       borderRadius: BorderRadius.circular(7),
+                      //       border: Border.all(
+                      //           width: 1, color: const Color(0xff1D0D63))),
+                      //   child:  Padding(
+
+                      //     padding: EdgeInsets.symmetric(horizontal: 10),
+                      //     child: TextFormField(
+                            
+                      //       showCursor: null,
+                      //       decoration: InputDecoration(),
+                      //     ),
+                      //   ),
+                      // ),
+                      // Container(
+                      //   height: 80,
+                      //   decoration: BoxDecoration(
+                      //       borderRadius: BorderRadius.circular(7),
+                      //       border: Border.all(
+                      //           width: 1, color: const Color(0xff1D0D63))),
+                      //   child: const Padding(
+                      //     padding: EdgeInsets.symmetric(horizontal: 10),
+                      //     child: Row(
+                      //       crossAxisAlignment: CrossAxisAlignment.start,
+                      //       mainAxisAlignment: MainAxisAlignment.end,
+                      //       children: [
+
+                      //     //      Text(
+                      //     //   'يوجد تشققات في جلد البون وبهتان اللون',
+                      //     //   style: TextStyle(
+                      //     //     color: Color(0xff1D0D63),
+                      //     //     fontFamily: 'sst arabic',
+                      //     //     fontSize: 10,
+                      //     //   ),
+                      //     // ),
+                      //       ],
+                      //     ),
+                      //   ),
+                        
+                      // ),
                       const SizedBox(
                         height: 20,
                       ),

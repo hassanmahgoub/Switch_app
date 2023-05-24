@@ -33,7 +33,7 @@ class _SplashState extends State<Splash> {
         body: Stack(
           children: [
             AnimatedPositioned(
-              duration: Duration(milliseconds: 1500),
+              duration: Duration(milliseconds: 1000),
               top: animate? 0 : -600,
               left: 10,
               right: animate ? 0 : -600,
@@ -45,7 +45,7 @@ class _SplashState extends State<Splash> {
               )),
             ),
             AnimatedPositioned(
-              duration: Duration(milliseconds: 1500),
+              duration: Duration(milliseconds: 1000),
               top: 0,
               left: animate ? 0 : -600,
               right: 140,

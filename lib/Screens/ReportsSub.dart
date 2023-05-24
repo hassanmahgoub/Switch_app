@@ -188,6 +188,8 @@ class _ReportsSubState extends State<ReportsSub> {
                           width: 10,
                         ),
                         RoundCheckBox(
+                          uncheckedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
+                          checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
                             checkedColor: const Color(0xff0474E1),
@@ -218,6 +220,8 @@ class _ReportsSubState extends State<ReportsSub> {
                           width: 10,
                         ),
                         RoundCheckBox(
+                          uncheckedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
+                          checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
                             checkedColor: const Color(0xff0474E1),
@@ -265,6 +269,8 @@ class _ReportsSubState extends State<ReportsSub> {
                           width: 10,
                         ),
                         RoundCheckBox(
+                          uncheckedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
+                          checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
                             checkedColor: const Color(0xff0474E1),
@@ -312,6 +318,8 @@ class _ReportsSubState extends State<ReportsSub> {
                           width: 10,
                         ),
                         RoundCheckBox(
+                          uncheckedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
+                          checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
                             checkedColor: const Color(0xff0474E1),
@@ -342,6 +350,8 @@ class _ReportsSubState extends State<ReportsSub> {
                           width: 10,
                         ),
                         RoundCheckBox(
+                          uncheckedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
+                          checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
                             checkedColor: const Color(0xff0474E1),
@@ -372,6 +382,8 @@ class _ReportsSubState extends State<ReportsSub> {
                           width: 10,
                         ),
                         RoundCheckBox(
+                          uncheckedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
+                          checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
                             checkedColor: const Color(0xff0474E1),
@@ -402,6 +414,8 @@ class _ReportsSubState extends State<ReportsSub> {
                           width: 10,
                         ),
                         RoundCheckBox(
+                          uncheckedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
+                          checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
                             checkedColor: const Color(0xff0474E1),
@@ -432,6 +446,8 @@ class _ReportsSubState extends State<ReportsSub> {
                           width: 10,
                         ),
                         RoundCheckBox(
+                          uncheckedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
+                          checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
                             checkedColor: const Color(0xff0474E1),

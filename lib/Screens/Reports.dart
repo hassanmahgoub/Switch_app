@@ -165,6 +165,7 @@ class _ReportsState extends State<Reports> {
                     border:
                         Border.all(width: 1, color: const Color(0xffD0E2E5))),
                 child: TextField(
+                  textAlign: TextAlign.end,
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
                       border:

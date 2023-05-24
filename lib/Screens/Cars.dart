@@ -20,7 +20,6 @@ class Cars extends StatelessWidget {
           FloatingActionButtonLocation.miniCenterDocked,
       floatingActionButton: FloatingActionButton(
         focusNode: null,
-        mouseCursor: MouseCursor.uncontrolled,
         isExtended: false,
         disabledElevation: null,
         elevation: 1,
@@ -181,6 +180,7 @@ class Cars extends StatelessWidget {
                           border: Border.all(
                               width: 1, color: const Color(0xffD0E2E5))),
                       child: TextField(
+                        textAlign: TextAlign.end,
                         keyboardType: TextInputType.text,
                         decoration: InputDecoration(
                             border: const OutlineInputBorder(
@@ -194,7 +194,7 @@ class Cars extends StatelessWidget {
                                 height: 10,
                               ),
                             ),
-                            labelText: 'بحث',
+                            hintText: 'بحث',
                             hintStyle: const TextStyle(
                               fontFamily: 'din',
                               color: Color(0xff52505F),
@@ -221,6 +221,7 @@ class Cars extends StatelessWidget {
                       ],
                     ),
                   ),
+                  
                   const SizedBox(
                     height: 10,
                   ),

@@ -51,7 +51,7 @@ class _ProfileState extends State<Profile> {
                       ),
                       InkWell(
                         child:
-                            SvgPicture.asset('assets/images/Group 472 (3).svg'),
+                            SvgPicture.asset('assets/images/noti.svg'),
                         onTap: () {
                           Navigator.pushReplacement(context,
                               MaterialPageRoute(builder: (context) => noti()));
@@ -85,7 +85,7 @@ class _ProfileState extends State<Profile> {
                 SizedBox(
                   height: 10,
                 ),
-                SvgPicture.asset('assets/images/Group 2040.svg'),
+                SvgPicture.asset('assets/images/profileicon.svg'),
                 const Text(
                   'ورشة العربة الذهبية',
                   style: TextStyle(
@@ -165,7 +165,7 @@ class _ProfileState extends State<Profile> {
                           SizedBox(
                             width: 25,
                           ),
-                          SvgPicture.asset('assets/images/Group 81.svg'),
+                          SvgPicture.asset('assets/images/editicon.svg'),
                         ],
                       ),
                     ),
@@ -202,7 +202,7 @@ class _ProfileState extends State<Profile> {
                           SizedBox(
                             width: 25,
                           ),
-                          SvgPicture.asset('assets/images/Group 83.svg')
+                          SvgPicture.asset('assets/images/password.svg')
                         ],
                       ),
                     ),
@@ -239,7 +239,7 @@ class _ProfileState extends State<Profile> {
                           SizedBox(
                             width: 25,
                           ),
-                          SvgPicture.asset('assets/images/Group 2041.svg'),
+                          SvgPicture.asset('assets/images/language.svg'),
                         ],
                       ),
                     ),
@@ -272,7 +272,7 @@ class _ProfileState extends State<Profile> {
                           SizedBox(
                             width: 25,
                           ),
-                          SvgPicture.asset('assets/images/Group 2034.svg'),
+                          SvgPicture.asset('assets/images/out.svg'),
                         ],
                       ),
                     ),

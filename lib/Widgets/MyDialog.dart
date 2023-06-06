@@ -52,6 +52,7 @@ class _MyDialogState extends State<MyDialog> {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 190),
                 child: AlertDialog(
+                  backgroundColor: Colors.white,
                   title: const Center(
                     child: Text(
                       'المقاعد (المراتب)',
@@ -89,7 +90,7 @@ class _MyDialogState extends State<MyDialog> {
                         children: [
                           InkWell(
                               child: SvgPicture.asset(
-                                  'assets/images/Icon feather-camera.svg'),
+                                  'assets/images/camera.svg'),
                               onTap: () => uploadImage()),
                           Expanded(child: Container()),
                           const Text(
@@ -101,7 +102,6 @@ class _MyDialogState extends State<MyDialog> {
                             ),
                           ),
                           Radio(
-                            
                               activeColor: const Color(0xff1D0D63),
                               value: 1,
                               groupValue: selectedValue1,
@@ -109,49 +109,34 @@ class _MyDialogState extends State<MyDialog> {
                               ))
                         ],
                       ),
-                      const TextField(),
-                      // Container(
-                      //     height: 80,
-                      //   decoration: BoxDecoration(
-                      //       borderRadius: BorderRadius.circular(7),
-                      //       border: Border.all(
-                      //           width: 1, color: const Color(0xff1D0D63))),
-                      //   child:  Padding(
+                      
+                      
+                      Container(
+                        height: 80,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(7),
+                            border: Border.all(
+                                width: 1, color: const Color(0xff1D0D63))),
+                        child: const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 10),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
 
-                      //     padding: EdgeInsets.symmetric(horizontal: 10),
-                      //     child: TextFormField(
-                            
-                      //       showCursor: null,
-                      //       decoration: InputDecoration(),
-                      //     ),
-                      //   ),
-                      // ),
-                      // Container(
-                      //   height: 80,
-                      //   decoration: BoxDecoration(
-                      //       borderRadius: BorderRadius.circular(7),
-                      //       border: Border.all(
-                      //           width: 1, color: const Color(0xff1D0D63))),
-                      //   child: const Padding(
-                      //     padding: EdgeInsets.symmetric(horizontal: 10),
-                      //     child: Row(
-                      //       crossAxisAlignment: CrossAxisAlignment.start,
-                      //       mainAxisAlignment: MainAxisAlignment.end,
-                      //       children: [
-
-                      //     //      Text(
-                      //     //   'يوجد تشققات في جلد البون وبهتان اللون',
-                      //     //   style: TextStyle(
-                      //     //     color: Color(0xff1D0D63),
-                      //     //     fontFamily: 'sst arabic',
-                      //     //     fontSize: 10,
-                      //     //   ),
-                      //     // ),
-                      //       ],
-                      //     ),
-                      //   ),
+                               Text(
+                            'يوجد تشققات في جلد البون وبهتان اللون',
+                            style: TextStyle(
+                              color: Color(0xff1D0D63),
+                              fontFamily: 'sst arabic',
+                              fontSize: 10,
+                            ),
+                          ),
+                            ],
+                          ),
+                        ),
                         
-                      // ),
+                      ),
                       const SizedBox(
                         height: 20,
                       ),

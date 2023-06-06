@@ -46,7 +46,7 @@ class _ReportsSubState extends State<ReportsSub> {
                       MaterialPageRoute(builder: (context) => const Orders()));
                 },
               ),
-              SvgPicture.asset('assets/images/Group 2056.svg')
+              SvgPicture.asset('assets/images/menu.svg')
             ],
           ),
         ),
@@ -81,7 +81,7 @@ class _ReportsSubState extends State<ReportsSub> {
                           percent: 0.27,
                           circularStrokeCap: CircularStrokeCap.round,
                           backgroundColor: const Color(0xff0474E1),
-                          center: const Text("75%"),
+                          center: const Text("75%",style: TextStyle(color: Color(0xff1D0D63),fontSize: 12,fontFamily: 'sst arabic',fontWeight: FontWeight.bold),),
                           progressColor: const Color(0xFf1D0D63),
                         ),
                         Expanded(child: Container()),
@@ -152,7 +152,7 @@ class _ReportsSubState extends State<ReportsSub> {
                         ),
                         Column(
                           children: [
-                            SvgPicture.asset('assets/images/Group 2020.svg'),
+                            SvgPicture.asset('assets/images/merc.svg'),
                           ],
                         )
                       ],
@@ -165,6 +165,7 @@ class _ReportsSubState extends State<ReportsSub> {
                     endIndent: 20,
                     indent: 20,
                     thickness: 1,
+                    color: Colors.grey,
                   ),
                   const SizedBox(
                     height: 60,
@@ -496,7 +497,7 @@ class _ReportsSubState extends State<ReportsSub> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               SvgPicture.asset(
-                                'assets/images/Group 2072.svg',
+                                'assets/images/enter.svg',
                                 height: 40,
                               ),
                               const Text('الداخلية',

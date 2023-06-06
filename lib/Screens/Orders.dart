@@ -37,7 +37,7 @@ class _OrdersState extends State<Orders> {
                       MaterialPageRoute(builder: (context) => const Cars()));
                 },
               ),
-              SvgPicture.asset('assets/images/Group 2056.svg')
+              SvgPicture.asset('assets/images/menu.svg')
             ],
           ),
         ),
@@ -72,45 +72,38 @@ class _OrdersState extends State<Orders> {
                           percent: 0.27,
                           circularStrokeCap: CircularStrokeCap.round,
                           backgroundColor: const Color(0xff0474E1),
-                          center: const Text("75%"),
+                          center: const Text('75%',style: TextStyle(color: Color(0xff1D0D63),fontSize: 12,fontFamily: 'sst arabic',fontWeight: FontWeight.bold),),
                           progressColor: const Color(0xFf1D0D63),
                         ),
+                        // ignore: prefer_const_constructors
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            InkWell(
-                              child: const Row(
-                                children: [
-                                  Text(
-                                    'CLS 350 (2012)',
-                                    style: TextStyle(
-                                        color: Color(0xff1D0D63),
-                                        fontFamily: 'sst bold',
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  SizedBox(
-                                    width: 5,
-                                  ),
-                                  Text(
-                                    'مرسيدس',
-                                    style: TextStyle(
-                                        color: Color(0xff1D0D63),
-                                        fontFamily: 'sst bold',
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ],
-                              ),
-                              onTap: () {
-                                Navigator.pushReplacement(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => const Orders()));
-                              },
+                          children: const [
+                            Row(
+                              children: [
+                                Text(
+                                  'CLS 350 (2012)',
+                                  style: TextStyle(
+                                      color: Color(0xff1D0D63),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  'مرسيدس',
+                                  style: TextStyle(
+                                      color: Color(0xff1D0D63),
+                                      fontFamily: 'sst bold',
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ],
                             ),
-                            const Text(
+                            Text(
                               'KMHD641UGHU321730',
                               style: TextStyle(
                                   color: Color(0xff0474E1),
@@ -118,7 +111,7 @@ class _OrdersState extends State<Orders> {
                                   fontSize: 12,
                                   fontWeight: FontWeight.bold),
                             ),
-                            const Row(
+                            Row(
                               children: [
                                 Text(
                                   '2154',
@@ -150,6 +143,7 @@ class _OrdersState extends State<Orders> {
                     height: 10,
                   ),
                   const Divider(
+                    color: Colors.grey,
                     endIndent: 20,
                     indent: 20,
                     thickness: 1,
@@ -164,7 +158,7 @@ class _OrdersState extends State<Orders> {
                       children: [
                         InkWell(
                           child: Column(children: [
-                            SvgPicture.asset('assets/images/Group 2072.svg'),
+                            SvgPicture.asset('assets/images/enter.svg'),
                             const Text(
                               'الداخلية',
                               style: TextStyle(
@@ -204,7 +198,7 @@ class _OrdersState extends State<Orders> {
                         ),
                         InkWell(
                           child: Column(children: [
-                            SvgPicture.asset('assets/images/Group 2070.svg'),
+                            SvgPicture.asset('assets/images/body.svg'),
                             const Text(
                               'البودي',
                               style: TextStyle(
@@ -243,7 +237,7 @@ class _OrdersState extends State<Orders> {
                         ),
                         InkWell(
                           child: Column(children: [
-                            SvgPicture.asset('assets/images/Group 2068.svg'),
+                            SvgPicture.asset('assets/images/engine.svg'),
                             const Text(
                               'المحرك',
                               style: TextStyle(
@@ -282,7 +276,7 @@ class _OrdersState extends State<Orders> {
                         ),
                         InkWell(
                           child: Column(children: [
-                            SvgPicture.asset('assets/images/Group 2066.svg'),
+                            SvgPicture.asset('assets/images/frame.svg'),
                             const Text(
                               'الهيكل',
                               style: TextStyle(
@@ -332,7 +326,7 @@ class _OrdersState extends State<Orders> {
                       children: [
                         InkWell(
                           child: Column(children: [
-                            SvgPicture.asset('assets/images/Group 2106.svg'),
+                            SvgPicture.asset('assets/images/road.svg'),
                             const Text(
                               'فحص طريق',
                               style: TextStyle(
@@ -372,7 +366,7 @@ class _OrdersState extends State<Orders> {
                         ),
                         InkWell(
                           child: Column(children: [
-                            SvgPicture.asset('assets/images/Group 2079.svg'),
+                            SvgPicture.asset('assets/images/emergn.svg'),
                             const Text(
                               'الكهرباء',
                               style: TextStyle(
@@ -411,7 +405,7 @@ class _OrdersState extends State<Orders> {
                         ),
                         InkWell(
                           child: Column(children: [
-                            SvgPicture.asset('assets/images/Group 2075.svg'),
+                            SvgPicture.asset('assets/images/brake.svg'),
                             const Text(
                               'الفرامل',
                               style: TextStyle(
@@ -450,7 +444,7 @@ class _OrdersState extends State<Orders> {
                         ),
                         InkWell(
                           child: Column(children: [
-                            SvgPicture.asset('assets/images/Group 2077.svg'),
+                            SvgPicture.asset('assets/images/tire.svg'),
                             const Text(
                               'الاطارات',
                               style: TextStyle(
@@ -545,7 +539,7 @@ class _OrdersState extends State<Orders> {
                       child: CircleAvatar(
                         radius: 60,
                         backgroundColor: Colors.white,
-                        child: SvgPicture.asset('assets/images/Group 2020.svg'),
+                        child: SvgPicture.asset('assets/images/merc.svg'),
                       ),
                     ),
                   ),
@@ -559,4 +553,3 @@ class _OrdersState extends State<Orders> {
   }
 }
 
-class RepoetSub {}

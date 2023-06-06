@@ -3,7 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:switch_app/Screens/Noti.dart';
-import 'package:switch_app/Widgets/Examine.dart';
+import 'package:switch_app/Screens/Orders.dart';
+import 'package:switch_app/Widgets/ExaminOrderData.dart';
 import 'Home.dart';
 import 'Profile.dart';
 import 'Reports.dart';
@@ -31,7 +32,7 @@ class Cars extends StatelessWidget {
               context, MaterialPageRoute(builder: (context) => const Home()));
         },
         backgroundColor: const Color(0xffBE1E2D),
-        child: SvgPicture.asset('assets/images/Group 149.svg'),
+        child: SvgPicture.asset('assets/images/home.svg'),
       ),
       bottomNavigationBar: SafeArea(
           child: Padding(
@@ -55,7 +56,7 @@ class Cars extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SvgPicture.asset(
-                          'assets/images/Group 96.svg',
+                          'assets/images/profile.svg',
                           height: 20,
                         ),
                         const Text(
@@ -75,7 +76,7 @@ class Cars extends StatelessWidget {
                 ),
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
                   SvgPicture.asset(
-                    'assets/images/Group 2064.svg',
+                    'assets/images/cars.svg',
                     height: 20,
                   ),
                   const Text(
@@ -94,7 +95,7 @@ class Cars extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SvgPicture.asset(
-                          'assets/images/Group 2062 (1).svg',
+                          'assets/images/orders.svg',
                           height: 20,
                         ),
                         const Text(
@@ -114,7 +115,7 @@ class Cars extends StatelessWidget {
                 ),
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
                   SvgPicture.asset(
-                    'assets/images/Icon ionic-md-paper.svg',
+                    'assets/images/order.svg',
                     height: 20,
                   ),
                   const Text(
@@ -131,7 +132,7 @@ class Cars extends StatelessWidget {
         ),
       )),
       backgroundColor: const Color(0xffF5F9F7),
-      body: Stack(
+      body: Column(
         children: [
           Container(
             height: 144,
@@ -148,7 +149,7 @@ class Cars extends StatelessWidget {
                   children: [
                     InkWell(
                       child: SvgPicture.asset(
-                        'assets/images/Group 472 (5).svg',
+                        'assets/images/noti.svg',
                       ),
                       onTap: () {
                         Navigator.push(
@@ -157,90 +158,125 @@ class Cars extends StatelessWidget {
                                 builder: (context) => const noti()));
                       },
                     ),
-                    SvgPicture.asset('assets/images/Group 121 (1).svg'),
-                    SvgPicture.asset('assets/images/Group 5 (1).svg'),
+                    SvgPicture.asset('assets/images/switch.svg'),
+                    SvgPicture.asset('assets/images/menu.svg'),
                   ]),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 150),
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Container(
-                      height: 45,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(7),
-                          border: Border.all(
-                              width: 1, color: const Color(0xffD0E2E5))),
-                      child: TextField(
-                        textAlign: TextAlign.end,
-                        keyboardType: TextInputType.text,
-                        decoration: InputDecoration(
-                            border: const OutlineInputBorder(
-                                borderSide: BorderSide.none),
-                            //enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(7),borderSide: const BorderSide(width: 1,color: Colors.white)),
-                            enabled: true,
-                            prefixIcon: Padding(
-                              padding: const EdgeInsets.all(10),
-                              child: SvgPicture.asset(
-                                'assets/images/Group 2057.svg',
-                                height: 10,
-                              ),
+          SingleChildScrollView(
+            child: Column(
+              children: [
+                const SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Container(
+                    height: 45,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(7),
+                        border: Border.all(
+                            width: 1, color: const Color(0xffD0E2E5))),
+                    child: TextField(
+                      textAlign: TextAlign.end,
+                      keyboardType: TextInputType.text,
+                      decoration: InputDecoration(
+                          border: const OutlineInputBorder(
+                              borderSide: BorderSide.none),
+                          //enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(7),borderSide: const BorderSide(width: 1,color: Colors.white)),
+                          enabled: true,
+                          prefixIcon: Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: SvgPicture.asset(
+                              'assets/images/search.svg',
+                              height: 10,
                             ),
-                            hintText: 'بحث',
-                            hintStyle: const TextStyle(
-                              fontFamily: 'din',
-                              color: Color(0xff52505F),
-                              fontSize: 16,
-                            )),
+                          ),
+                          hintText: 'بحث',
+                          hintStyle: const TextStyle(
+                            fontFamily: 'din',
+                            color: Color(0xff52505F),
+                            fontSize: 16,
+                          )),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 30),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text(
+                        'طلبات الفحص',
+                        style: TextStyle(
+                            color: Color(0xffBE1E2D),
+                            fontFamily: 'sst bold',
+                            fontSize: 12),
                       ),
-                    ),
+                    ],
                   ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 30),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Text(
-                          'طلبات الفحص',
-                          style: TextStyle(
-                              color: Color(0xffBE1E2D),
-                              fontFamily: 'sst bold',
-                              fontSize: 12),
-                        ),
-                      ],
-                    ),
-                  ),
-                  
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  const Examine(),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  const Examine(),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  const Examine(),
-                  const SizedBox(
-                    height: 40,
-                  )
-                ],
-              ),
+                ),
+                
+                
+              ],
             ),
-          )
+          ),
+          Expanded(
+                    child: ListView.builder(
+                      scrollDirection: Axis.vertical,
+                      itemCount: examineOrderData.length,
+                      itemBuilder: (context, index){
+                        final examineOrder = examineOrderData[index];
+                        return Padding(
+                          padding: const EdgeInsets.only(left: 10,right: 10,bottom: 10),
+                          child: Container(
+                            height: 100,
+                                              width: ScreenSize.width,
+                                              decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(7),
+                            border: Border.all(
+                                width: 1, color: const Color(0xffD0E2E5))),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 20),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                              const Icon(Icons.arrow_back_ios,size: 15,color: Color(0xffD0E2E5),),
+                              examineOrder.precentIndicator,
+                              Expanded(child: Container()),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 15,bottom: 15),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Orders()));
+                                      },
+                                      child: Text(examineOrder.carName,style: const TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst arabic',fontSize: 12,fontWeight: FontWeight.bold),)),
+                                    Text(examineOrder.shasNumber,style: const TextStyle(color: Color(0xff0474E1),fontFamily: 'din',fontSize: 12,),),
+                                  Row(children: [
+                                    Text(examineOrder.orderNumber,style: const TextStyle(color: Color(0xffBE1E2D),fontFamily: 'din',fontSize: 14,fontWeight: FontWeight.bold),),
+                                  const SizedBox(width: 5,),
+                                  Text(examineOrder.orderName,style: const TextStyle(color: Color(0xff1D0D63),fontFamily: 'sst arabic',fontSize: 12,),),
+                                  ],)
+                                  ],
+                                ),
+                              ),
+                              SizedBox(width: 20,),
+                              examineOrder.image
+                            ],),
+                          )
+                          ),
+                        );
+                    }),
+                  )
         ],
       ),
     );

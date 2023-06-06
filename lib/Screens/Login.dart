@@ -32,9 +32,12 @@ class _LoginState extends State<Login> {
     return Scaffold(
         backgroundColor: const Color(0xffF5F9F7),
         body: Stack(children: [
-          SvgPicture.asset(
-            "assets/images/Group 122.svg",
-            height: 600,
+          Positioned(
+            right: -130,
+            child: SvgPicture.asset(
+              "assets/images/splash.svg",
+              height: 600,
+            ),
           ),
           SingleChildScrollView(
             child: Form(
@@ -68,7 +71,7 @@ class _LoginState extends State<Login> {
                   Stack(children: [
                     Center(
                         child: SvgPicture.asset(
-                            'assets/images/Rectangle 916.svg')),
+                            'assets/images/rectangle.svg')),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -115,15 +118,15 @@ class _LoginState extends State<Login> {
                                       ),
                                     ),
                                   )),
-                              validator: (value) {
-                                if (value!.isEmpty ||
-                                    !RegExp(r'^(?:[+0][1-9])?[0-9]{10,12}$')
-                                        .hasMatch(value)) {
-                                  return 'incorrect';
-                                } else {
-                                  print(value);
-                                }
-                              },
+                              // validator: (value) {
+                              //   if (value!.isEmpty ||
+                              //       !RegExp(r'^(?:[+0][1-9])?[0-9]{10,12}$')
+                              //           .hasMatch(value)) {
+                              //     return 'incorrect';
+                              //   } else {
+                              //     print(value);
+                              //   }
+                              // },
                             ),
                           ),
                         ),
@@ -163,15 +166,15 @@ class _LoginState extends State<Login> {
                                       ),
                                     ),
                                   )),
-                              validator: (value) {
-                                if (value!.isEmpty ||
-                                    !RegExp(r'[!@#$%^&*(),.?":{}|<>]')
-                                        .hasMatch(value)) {
-                                  return 'incorrect';
-                                } else {
-                                  print(value);
-                                }
-                              },
+                              // validator: (value) {
+                              //   if (value!.isEmpty ||
+                              //       !RegExp(r'[!@#$%^&*(),.?":{}|<>]')
+                              //           .hasMatch(value)) {
+                              //     return 'incorrect';
+                              //   } else {
+                              //     print(value);
+                              //   }
+                              // },
                             ),
                           ),
                         ),
@@ -198,19 +201,11 @@ class _LoginState extends State<Login> {
                               ),
                               onTap: () {
                                 if (formKey.currentState!.validate()) {
-                                  
-
-                                  const TextStyle(
-                                      fontFamily: 'rb',
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold);
-                                }
-                               
-
-                                Navigator.pushReplacement(
+                                   Navigator.pushReplacement(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => const Home()));
+                                }
                               }),
                         ),
                         const SizedBox(

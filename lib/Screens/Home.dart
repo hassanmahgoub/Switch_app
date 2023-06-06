@@ -41,7 +41,7 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SvgPicture.asset(
-                          'assets/images/Group 96.svg',
+                          'assets/images/profile.svg',
                           height: 20,
                         ),
                         const Text(
@@ -61,7 +61,7 @@ class _HomeState extends State<Home> {
                 ),
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
                   SvgPicture.asset(
-                    'assets/images/Group 2064.svg',
+                    'assets/images/cars.svg',
                     height: 20,
                   ),
                   const Text(
@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SvgPicture.asset(
-                          'assets/images/Group 2062 (1).svg',
+                          'assets/images/orders.svg',
                           height: 20,
                         ),
                         const Text(
@@ -103,7 +103,7 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SvgPicture.asset(
-                          'assets/images/Icon ionic-md-paper.svg',
+                          'assets/images/order.svg',
                           height: 20,
                         ),
                         const Text(
@@ -129,7 +129,7 @@ class _HomeState extends State<Home> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: const Color(0xffBE1E2D),
-        child: SvgPicture.asset('assets/images/Group 149.svg'),
+        child: SvgPicture.asset('assets/images/home.svg'),
       ),
       backgroundColor: const Color(0xffF5F9F7),
       body: Stack(children: [
@@ -138,7 +138,7 @@ class _HomeState extends State<Home> {
           width: ScreenSize.width,
           decoration: const BoxDecoration(
               color: Color(0xff1D0D63),
-              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20))),
+              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20))),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -152,7 +152,7 @@ class _HomeState extends State<Home> {
                   children: [
                     InkWell(
                       child:
-                          SvgPicture.asset('assets/images/Group 472 (3).svg'),
+                          SvgPicture.asset('assets/images/noti.svg'),
                       onTap: () {
                         Navigator.push(
                             context,
@@ -160,8 +160,8 @@ class _HomeState extends State<Home> {
                                 builder: (context) => const noti()));
                       },
                     ),
-                    SvgPicture.asset('assets/images/Group 121 (1).svg'),
-                    SvgPicture.asset('assets/images/Group 5 (1).svg'),
+                    SvgPicture.asset('assets/images/switch.svg'),
+                    SvgPicture.asset('assets/images/menu.svg'),
                   ],
                 ),
               ),
@@ -172,7 +172,7 @@ class _HomeState extends State<Home> {
                   children: [
                     InkWell(
                       child:
-                          SvgPicture.asset('assets/images/Group 2039 (1).svg'),
+                          SvgPicture.asset('assets/images/prof.svg'),
                       onTap: () {
                         Navigator.push(
                             context,
@@ -410,7 +410,7 @@ class _HomeState extends State<Home> {
                           Padding(
                             padding: const EdgeInsets.only(top: 5),
                             child: SvgPicture.asset(
-                                'assets/images/Group 2018 (1).svg'),
+                                'assets/images/ordr.svg'),
                           )
                         ],
                       ),
@@ -483,7 +483,7 @@ class _HomeState extends State<Home> {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   SvgPicture.asset(
-                                      'assets/images/Group 2038.svg'),
+                                      'assets/images/car.svg'),
                                   const Text(
                                     'السيارات',
                                     style: TextStyle(

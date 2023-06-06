@@ -18,14 +18,7 @@ class _SplashState extends State<Splash> {
     startAnimation();
     super.initState();
   }
-  // void initState() {
-  //   super.initState();
-  //   Timer(
-  //       const Duration(seconds: 5),
-  //       () => Navigator.pushReplacement(
-  //           context, MaterialPageRoute(builder: (context) => const Login())));
-  // }
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +33,7 @@ class _SplashState extends State<Splash> {
               bottom: 170,
               child: Center(
                   child: Image.asset(
-                "assets/images/Group 2036@2x.png",
+                "assets/images/switch.png",
                 height: 170,
               )),
             ),
@@ -52,7 +45,7 @@ class _SplashState extends State<Splash> {
               bottom:animate ? 0 : -100,
               child: Column(mainAxisAlignment: MainAxisAlignment.end, children: [
                 SvgPicture.asset(
-                  "assets/images/Group 122.svg",
+                  "assets/images/splash.svg",
                   height: 380,
                 )
               ]),
@@ -66,6 +59,6 @@ class _SplashState extends State<Splash> {
     setState(() => animate = true,);
     await Future.delayed(Duration(milliseconds: 5000));
     // ignore: use_build_context_synchronously
-    Navigator.push(context, MaterialPageRoute(builder: (context)=> Login()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> Login()));
   }
 }

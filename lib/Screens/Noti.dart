@@ -46,7 +46,7 @@ class _notiState extends State<noti> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SvgPicture.asset(
-                          'assets/images/Group 96.svg',
+                          'assets/images/profile.svg',
                           height: 20,
                         ),
                         const Text(
@@ -66,7 +66,7 @@ class _notiState extends State<noti> {
                 ),
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
                   SvgPicture.asset(
-                    'assets/images/Group 2064.svg',
+                    'assets/images/cars.svg',
                     height: 20,
                   ),
                   const Text(
@@ -85,7 +85,7 @@ class _notiState extends State<noti> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SvgPicture.asset(
-                          'assets/images/Group 2062 (1).svg',
+                          'assets/images/orders.svg',
                           height: 20,
                         ),
                         const Text(
@@ -108,7 +108,7 @@ class _notiState extends State<noti> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SvgPicture.asset(
-                          'assets/images/Icon ionic-md-paper.svg',
+                          'assets/images/order.svg',
                           height: 20,
                         ),
                         const Text(
@@ -139,7 +139,7 @@ class _notiState extends State<noti> {
               context, MaterialPageRoute(builder: (context) => const Home()));
         },
         backgroundColor: const Color(0xffBE1E2D),
-        child: SvgPicture.asset('assets/images/Group 149.svg'),
+        child: SvgPicture.asset('assets/images/home.svg'),
       ),
       backgroundColor: const Color(0xffF5F9F7),
       body: Column(
@@ -157,9 +157,9 @@ class _notiState extends State<noti> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  SvgPicture.asset('assets/images/Group 472 (3).svg'),
-                  SvgPicture.asset('assets/images/Group 121 (1).svg'),
-                  SvgPicture.asset('assets/images/Group 5 (1).svg'),
+                  SvgPicture.asset('assets/images/noti.svg'),
+                  SvgPicture.asset('assets/images/switch.svg'),
+                  SvgPicture.asset('assets/images/menu.svg'),
                 ],
               ),
             ),
@@ -255,7 +255,7 @@ class _notiState extends State<noti> {
                     const SizedBox(
                       width: 15,
                     ),
-                    SvgPicture.asset('assets/images/Group 2107.svg'),
+                    SvgPicture.asset('assets/images/notif.svg'),
                   ],
                 ),
               ),
@@ -330,7 +330,7 @@ class _notiState extends State<noti> {
                     const SizedBox(
                       width: 15,
                     ),
-                    SvgPicture.asset('assets/images/Group 2107.svg'),
+                    SvgPicture.asset('assets/images/notif.svg'),
                   ],
                 ),
               ),
@@ -402,7 +402,7 @@ class _notiState extends State<noti> {
                     const SizedBox(
                       width: 15,
                     ),
-                    SvgPicture.asset('assets/images/Group 2107.svg'),
+                    SvgPicture.asset('assets/images/notif.svg'),
                   ],
                 ),
               ),

@@ -31,7 +31,7 @@ class Cars extends StatelessWidget {
           Navigator.pushReplacement(
               context, MaterialPageRoute(builder: (context) => const Home()));
         },
-        backgroundColor: const Color(0xffBE1E2D),
+        backgroundColor: const Color(0xff009FBD),
         child: SvgPicture.asset('assets/images/home.svg'),
       ),
       bottomNavigationBar: SafeArea(
@@ -179,6 +179,7 @@ class Cars extends StatelessWidget {
                         border: Border.all(
                             width: 1, color: const Color(0xffD0E2E5))),
                     child: TextField(
+                      style: TextStyle(color: Color(0xff1D0D63)),
                       textAlign: TextAlign.end,
                       keyboardType: TextInputType.text,
                       decoration: InputDecoration(
@@ -213,7 +214,7 @@ class Cars extends StatelessWidget {
                       Text(
                         'طلبات الفحص',
                         style: TextStyle(
-                            color: Color(0xffBE1E2D),
+                            color: Color(0xff009FBD),
                             fontFamily: 'sst bold',
                             fontSize: 12),
                       ),

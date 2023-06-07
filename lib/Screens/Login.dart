@@ -4,7 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
+import '../Widgets/themeConstant.dart';
 import 'Home.dart';
 import 'Return.dart';
 
@@ -18,20 +18,18 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
    
   final formKey = GlobalKey<FormState>();
-  // bool animate =false;
-  // @override
-  // void initState() {
-  //   startAnimation();
-  //   super.initState();
-  // }
   @override
   Widget build(BuildContext context) {
+    TextTheme _textTheme = Theme.of(context).textTheme;
+  bool isDark = Theme.of(context).brightness == Brightness.dark;
     // ignore: non_constant_identifier_names
     final ScreenSize = MediaQuery.of(context).size;
-
     return Scaffold(
         backgroundColor: const Color(0xffF5F9F7),
         body: Stack(children: [
+          // Switch(value: _themeManager.themeMode == ThemeMode.dark, onChanged: (newValue){
+          //                 _themeManager.toggleTheme(newValue);
+          //               }),
           Positioned(
             right: -130,
             child: SvgPicture.asset(
@@ -44,24 +42,21 @@ class _LoginState extends State<Login> {
               key: formKey,
               child: Column(
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.only(top: 80, left: 20),
+                   Padding(
+                    padding: const EdgeInsets.only(top: 80, left: 20),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.language_outlined,
-                          color: Color(0xffBE1E2D),
-                        ),
-                        SizedBox(
+                        SvgPicture.asset('assets/images/languicon.svg'),
+                        const SizedBox(
                           width: 6,
                         ),
-                        Text(
+                        const Text(
                           "English",
                           style: TextStyle(
                               fontSize: 16,
                               fontFamily: 'Din',
                               color: Color(0xff1D0D63)),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -78,7 +73,7 @@ class _LoginState extends State<Login> {
                         const Text(
                           "تسجيل الدخول",
                           style: TextStyle(
-                            color: Color(0xffBE1E2D),
+                            color: Color(0xff009FBD),
                             fontSize: 20,
                             fontFamily: "sst bold",
                           ),

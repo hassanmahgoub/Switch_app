@@ -23,7 +23,7 @@ class AlertDialogs {
                 child: Text(
               title,
               style: TextStyle(
-                  fontSize: 15, fontFamily: 'rb', fontWeight: FontWeight.bold),
+                  fontSize: 15, fontFamily: 'sst arabic', fontWeight: FontWeight.bold),
             )),
             //content:  Text(body),
             actions: [
@@ -45,6 +45,7 @@ class AlertDialogs {
                           style: TextStyle(
                               fontFamily: 'din',
                               fontSize: 15,
+                              
                               fontWeight: FontWeight.bold,
                               color: Colors.white),
                         ),

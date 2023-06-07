@@ -76,7 +76,7 @@ class _ProfileState extends State<Profile> {
                     Text(
                       ',مرحباً',
                       style: TextStyle(
-                          color: Color(0xffBE1E2D),
+                          color: Color(0xff009FBD),
                           fontFamily: 'sst arabic',
                           fontSize: 26),
                     ),
@@ -125,7 +125,7 @@ class _ProfileState extends State<Profile> {
                           Text(
                             'الملف الشخصي',
                             style: TextStyle(
-                                color: Color(0xffBE1E2D),
+                                color: Color(0xff009FBD),
                                 fontFamily: 'sst bold',
                                 fontSize: 16),
                           ),
@@ -165,7 +165,7 @@ class _ProfileState extends State<Profile> {
                           SizedBox(
                             width: 25,
                           ),
-                          SvgPicture.asset('assets/images/editicon.svg'),
+                          SvgPicture.asset('assets/images/profileedit.svg'),
                         ],
                       ),
                     ),
@@ -202,7 +202,7 @@ class _ProfileState extends State<Profile> {
                           SizedBox(
                             width: 25,
                           ),
-                          SvgPicture.asset('assets/images/password.svg')
+                          SvgPicture.asset('assets/images/passwordchange.svg')
                         ],
                       ),
                     ),
@@ -239,7 +239,7 @@ class _ProfileState extends State<Profile> {
                           SizedBox(
                             width: 25,
                           ),
-                          SvgPicture.asset('assets/images/language.svg'),
+                          SvgPicture.asset('assets/images/languchange.svg'),
                         ],
                       ),
                     ),

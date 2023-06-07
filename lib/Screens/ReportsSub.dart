@@ -193,7 +193,7 @@ class _ReportsSubState extends State<ReportsSub> {
                           checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
-                            checkedColor: const Color(0xff0474E1),
+                            checkedColor: const Color(0xff009FBD),
                             size: 25,
                             onTap: (value) {})
                       ],
@@ -225,7 +225,7 @@ class _ReportsSubState extends State<ReportsSub> {
                           checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
-                            checkedColor: const Color(0xff0474E1),
+                            checkedColor: const Color(0xff009FBD),
                             size: 25,
                             onTap: (value) {})
                       ],
@@ -274,7 +274,7 @@ class _ReportsSubState extends State<ReportsSub> {
                           checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
-                            checkedColor: const Color(0xff0474E1),
+                            checkedColor: const Color(0xff009FBD),
                             size: 25,
                             onTap: (value) {})
                       ],
@@ -323,7 +323,7 @@ class _ReportsSubState extends State<ReportsSub> {
                           checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
-                            checkedColor: const Color(0xff0474E1),
+                            checkedColor: const Color(0xff009FBD),
                             size: 25,
                             onTap: (value) {})
                       ],
@@ -355,7 +355,7 @@ class _ReportsSubState extends State<ReportsSub> {
                           checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
-                            checkedColor: const Color(0xff0474E1),
+                            checkedColor: const Color(0xff009FBD),
                             size: 25,
                             onTap: (value) {})
                       ],
@@ -387,7 +387,7 @@ class _ReportsSubState extends State<ReportsSub> {
                           checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
-                            checkedColor: const Color(0xff0474E1),
+                            checkedColor: const Color(0xff009FBD),
                             size: 25,
                             onTap: (value) {})
                       ],
@@ -419,7 +419,7 @@ class _ReportsSubState extends State<ReportsSub> {
                           checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
-                            checkedColor: const Color(0xff0474E1),
+                            checkedColor: const Color(0xff009FBD),
                             size: 25,
                             onTap: (value) {})
                       ],
@@ -451,7 +451,7 @@ class _ReportsSubState extends State<ReportsSub> {
                           checkedWidget: const Icon(Icons.done,size: 15,color: Colors.white,),
                             borderColor: const Color(0xffD0E2E5),
                             uncheckedColor: const Color(0xffD0E2E5),
-                            checkedColor: const Color(0xff0474E1),
+                            checkedColor: const Color(0xff009FBD),
                             size: 25,
                             onTap: (value) {})
                       ],
@@ -502,7 +502,7 @@ class _ReportsSubState extends State<ReportsSub> {
                               ),
                               const Text('الداخلية',
                                   style: TextStyle(
-                                      color: Color(0xffBE1E2D),
+                                      color: Color(0xff009FBD),
                                       fontFamily: 'sst bold',
                                       fontSize: 10))
                             ]),

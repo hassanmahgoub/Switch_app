@@ -53,7 +53,7 @@ class _ReturnState extends State<Return> {
                     const Text(
                       "نسيت كلمة المرور",
                       style: TextStyle(
-                          color: Color(0xffBE1E2D),
+                          color: Color(0xff009FBD),
                           fontSize: 20,
                           fontFamily: "sst arabic",
                           fontWeight: FontWeight.bold),

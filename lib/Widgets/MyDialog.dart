@@ -157,6 +157,7 @@ class _MyDialogState extends State<MyDialog> {
                                       color: Colors.white,
                                       fontFamily: 'sst arabic',
                                       fontSize: 12,
+                                      
                                     ),
                                   )))),
                           const SizedBox(

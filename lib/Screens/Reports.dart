@@ -173,6 +173,7 @@ class _ReportsState extends State<Reports> {
                   borderRadius: BorderRadius.circular(7),
                   border: Border.all(width: 1, color: const Color(0xffD0E2E5))),
               child: TextField(
+                style: const TextStyle(color: Color(0xff1D0D63)),
                 textAlign: TextAlign.end,
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
@@ -206,7 +207,7 @@ class _ReportsState extends State<Reports> {
                 Text(
                   'التقارير',
                   style: TextStyle(
-                      color: Color(0xffBE1E2D),
+                      color: Color(0xff009FBD),
                       fontFamily: 'sst bold',
                       fontSize: 12,
                       fontWeight: FontWeight.bold),
@@ -273,7 +274,7 @@ class _ReportsState extends State<Reports> {
                                           Text(
                                             data.examineType,
                                             style: const TextStyle(
-                                                color: Color(0xffBE1E2D),
+                                                color: Color(0xff009FBD),
                                                 fontFamily: 'din',
                                                 fontSize: 12,
                                                 fontWeight: FontWeight.bold),
@@ -332,7 +333,7 @@ class _ReportsState extends State<Reports> {
           Navigator.push(
               context, MaterialPageRoute(builder: (context) => const Home()));
         },
-        backgroundColor: const Color(0xffBE1E2D),
+        backgroundColor: const Color(0xff009FBD),
         child: SvgPicture.asset('assets/images/home.svg'),
       ),
     );

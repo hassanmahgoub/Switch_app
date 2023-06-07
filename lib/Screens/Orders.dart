@@ -162,7 +162,7 @@ class _OrdersState extends State<Orders> {
                             const Text(
                               'الداخلية',
                               style: TextStyle(
-                                  color: Color(0xffBE1E2D),
+                                  color: Color(0xff009FBD),
                                   fontFamily: 'sst arabic',
                                   fontSize: 10),
                             ),
@@ -202,7 +202,7 @@ class _OrdersState extends State<Orders> {
                             const Text(
                               'البودي',
                               style: TextStyle(
-                                  color: Color(0xffBE1E2D),
+                                  color: Color(0xff009FBD),
                                   fontFamily: 'sst bold',
                                   fontSize: 10),
                             ),
@@ -241,7 +241,7 @@ class _OrdersState extends State<Orders> {
                             const Text(
                               'المحرك',
                               style: TextStyle(
-                                  color: Color(0xffBE1E2D),
+                                  color: Color(0xff009FBD),
                                   fontFamily: 'sst bold',
                                   fontSize: 10),
                             ),
@@ -280,7 +280,7 @@ class _OrdersState extends State<Orders> {
                             const Text(
                               'الهيكل',
                               style: TextStyle(
-                                  color: Color(0xffBE1E2D),
+                                  color: Color(0xff009FBD),
                                   fontFamily: 'sst bold',
                                   fontSize: 10),
                             ),
@@ -330,7 +330,7 @@ class _OrdersState extends State<Orders> {
                             const Text(
                               'فحص طريق',
                               style: TextStyle(
-                                  color: Color(0xffBE1E2D),
+                                  color: Color(0xff009FBD),
                                   fontFamily: 'sst arabic',
                                   fontSize: 10),
                             ),
@@ -370,7 +370,7 @@ class _OrdersState extends State<Orders> {
                             const Text(
                               'الكهرباء',
                               style: TextStyle(
-                                  color: Color(0xffBE1E2D),
+                                  color: Color(0xff009FBD),
                                   fontFamily: 'sst bold',
                                   fontSize: 10),
                             ),
@@ -409,7 +409,7 @@ class _OrdersState extends State<Orders> {
                             const Text(
                               'الفرامل',
                               style: TextStyle(
-                                  color: Color(0xffBE1E2D),
+                                  color: Color(0xff009FBD),
                                   fontFamily: 'sst bold',
                                   fontSize: 10),
                             ),
@@ -448,7 +448,7 @@ class _OrdersState extends State<Orders> {
                             const Text(
                               'الاطارات',
                               style: TextStyle(
-                                  color: Color(0xffBE1E2D),
+                                  color: Color(0xff009FBD),
                                   fontFamily: 'sst bold',
                                   fontSize: 10),
                             ),

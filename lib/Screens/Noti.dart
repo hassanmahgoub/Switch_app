@@ -138,7 +138,7 @@ class _notiState extends State<noti> {
           Navigator.pushReplacement(
               context, MaterialPageRoute(builder: (context) => const Home()));
         },
-        backgroundColor: const Color(0xffBE1E2D),
+        backgroundColor: const Color(0xff009FBD),
         child: SvgPicture.asset('assets/images/home.svg'),
       ),
       backgroundColor: const Color(0xffF5F9F7),
@@ -175,14 +175,14 @@ class _notiState extends State<noti> {
                 Text(
                   'حذف الكل',
                   style: TextStyle(
-                      color: Color(0xffBE1E2D),
+                      color: Color(0xff009FBD),
                       fontFamily: 'sst bold',
                       fontSize: 12),
                 ),
                 Text(
                   'التنبيهات',
                   style: TextStyle(
-                      color: Color(0xffBE1E2D),
+                      color: Color(0xff009FBD),
                       fontFamily: 'sst bold',
                       fontSize: 12),
                 ),
@@ -214,7 +214,7 @@ class _notiState extends State<noti> {
                           'تهنئة عبد الفطر المبارك',
                           maxLines: 1,
                           style: TextStyle(
-                              color: Color(0xffBE1E2D),
+                              color: Color(0xff009FBD),
                               fontFamily: 'sst bold',
                               fontSize: 10,
                               overflow: TextOverflow.ellipsis),
@@ -285,13 +285,13 @@ class _notiState extends State<noti> {
                         const Text(
                           'عن التطبيق',
                           style: TextStyle(
-                              color: Color(0xffBE1E2D),
+                              color: Color(0xff009FBD),
                               fontFamily: 'sst bold',
                               fontSize: 10),
                         ),
                         Text(
-                          'تطبيق سويتش التطبيق الوحيد الذي يقدم خدمة الفحص الشامل.والدقيق \n للمركبات لغرض الصيانة او البيع ',
-                          maxLines: 1,
+                          'تطبيق سويتش التطبيق الوحيد الذي يقدم خدمة الفحص الشامل'
+                          '.والدقيق \n للمركبات لغرض الصيانة او البيع ',
                           textAlign: TextAlign.end,
                           style: TextStyle(
                             overflow: TextOverflow.ellipsis,
@@ -299,6 +299,7 @@ class _notiState extends State<noti> {
                             fontFamily: 'sst arabic',
                             fontSize: 9.5 * textScale,
                           ),
+                          maxLines: 1,
                         ),
                         const SizedBox(
                           height: 5,
@@ -360,7 +361,7 @@ class _notiState extends State<noti> {
                         Text(
                           'فحص جديد',
                           style: TextStyle(
-                              color: Color(0xffBE1E2D),
+                              color: Color(0xff009FBD),
                               fontFamily: 'sst bold',
                               fontSize: 10),
                         ),

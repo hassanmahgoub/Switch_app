@@ -16,6 +16,8 @@ class _HomeState extends State<Home> {
   
   @override
   Widget build(BuildContext context) {
+  
+
     // ignore: non_constant_identifier_names
     final ScreenSize = MediaQuery.of(context).size;
     return Scaffold(
@@ -128,7 +130,7 @@ class _HomeState extends State<Home> {
           FloatingActionButtonLocation.miniCenterDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        backgroundColor: const Color(0xffBE1E2D),
+        backgroundColor: const Color(0xff009FBD),
         child: SvgPicture.asset('assets/images/home.svg'),
       ),
       backgroundColor: const Color(0xffF5F9F7),
@@ -186,7 +188,7 @@ class _HomeState extends State<Home> {
                         Text(
                           'مرحباً بك في سويتش',
                           style: TextStyle(
-                              color: Color(0xffBE1E2D),
+                              color: Color(0xff009FBD),
                               fontFamily: 'sst bold',
                               fontSize: 16),
                         ),
@@ -390,7 +392,7 @@ class _HomeState extends State<Home> {
                           const Text(
                             '2154',
                             style: TextStyle(
-                                color: Color(0xffBE1E2D),
+                                color: Color(0xff009FBD),
                                 fontFamily: 'din',
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold),
@@ -410,7 +412,7 @@ class _HomeState extends State<Home> {
                           Padding(
                             padding: const EdgeInsets.only(top: 5),
                             child: SvgPicture.asset(
-                                'assets/images/ordr.svg'),
+                                'assets/images/ordr.svg',color: Color(0xff009FBD),),
                           )
                         ],
                       ),
